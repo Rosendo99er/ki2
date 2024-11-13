@@ -71,7 +71,7 @@
   --company-font-size-text: 18px;
   --company-font-size-finePrint: 18px;
   --company-font-size-button: 18px;
-  --form-and-field-company-color: #DEDFE3;
+  --form-and-field-company-color: #FDFDFD;
   --primary-background-company-color: #ECECEC;
   --modal-background: rgba(0, 0, 0, 0.5);
   --clara-image-url: url("https://rosendo99er.github.io/images/F70BB42B-E612-4FBD-89ED-91230C60F476.PNG");
@@ -809,7 +809,7 @@ html, body {
 #contact-form-aktennummer,
 #contact-form-aktennummer:focus,
 #contact-form-aktennummer:valid {
-    background-color: var(--primary-background-color);
+    background-color: var(--form-and-field-company-color);
 }
 
 
@@ -849,7 +849,7 @@ html, body {
 #contact-form-name,
 #contact-form-name:focus,
 #contact-form-name:valid {
-    background-color: var(--primary-background-color);
+    background-color: var(--form-and-field-company-color);
 }
 
 
@@ -887,6 +887,14 @@ html, body {
   box-sizing: border-box;
   position: relative;
 }
+
+#contact-form-email,
+#contact-form-email:focus,
+#contact-form-email:valid {
+    background-color: var(--form-and-field-company-color);
+}
+
+
 
 
 #contact-form-email::placeholder {
@@ -954,7 +962,7 @@ html, body {
 #contact-form-nachricht,
 #contact-form-nachricht:focus,
 #contact-form-nachricht:valid {
-    background-color: var(--primary-background-color);
+    background-color: var(--form-and-field-company-color);
 }
 
 #modalMessage,
@@ -2373,13 +2381,13 @@ body.modal-open {
   color: var(--primary-font-color);
   font-weight: normal;
   padding: 10px 10px 10px 30px;
-  border: 0px solid var(--primary-border-color);
+  border: 2px solid var(--tertiary-border-color);
   border-radius: var(--primary-border-radius);
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  height: 45px; /* Höhe */
+  height: 47px; /* Höhe */
   min-height: 45px; /* Minimale Höhe */
   max-height: 200px; /* Maximale Höhe */
   max-width: 100%;
