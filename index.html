@@ -1,0 +1,5996 @@
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Chatbot</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
+
+<!-- Der Abruf von Google-Fonts darf nur im Kontext "Clara free" aktiviert sein! -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+
+
+<style>
+
+/* ########################creamco
+
+:root {
+
+  --rules-customer: creamco; 
+  --company-main-url: "https://www.cream-collection.de";
+  --company-logo-url: url("https://www.cream-collection.de/wp-content/uploads/go-x/u/59b84de7-525d-4992-99ec-ac57b73c25b6/image-640x211.png");
+  --company-logo-background: var(--secondary-background-color);
+  --company-name: "cream collection Stephan Vila";
+  --company-street: "Roswithastraße 28";
+  --company-city: "45131 Essen";
+  --company-email: "stephan.vila@cream-collection.de";
+  --primary-company-color: #3FA6C7;
+  --secondary-company-color: #D87A92;
+  --tertiary-company-color: #707B84;
+  --tertiary-company-color-light: #F1F2F3;
+  --website-standard-font-color-light: #fff;
+  --website-standard-font-color-dark: #000;
+  --primary-company-border-radius: 8px;
+  --company-font-family: 'Quicksand', sans-serif;
+  --company-font-weight: 400;
+  --company-font-size-title: 27px;
+  --company-font-size-subtitle: 18px;
+  --company-font-size-text: 18px;
+  --company-font-size-fineprint: 18px;
+  --company-font-size-button: 18px;
+  --form-and-field-company-color: #ddd;
+  --primary-background-company-color: #fff;
+  --modal-background: rgba(0, 0, 0, 0.5);
+  --clara-image-url: url("https://www.cream-collection.de/wp-content/uploads/go-x/u/8b4f2525-c964-461b-a6a9-daa9ef61f180/l0,t0,w482,h410/image-240x204.jpg");
+########################*/
+
+/* ########################customer########################*/
+
+:root {
+
+  --rules-customer: Königs Inkasso; 
+  --company-main-url: "https://koenigs-inkasso.de";
+  --company-logo-url: url("https://koenigs-inkasso.de/wp-content/uploads/sites/5/2018/07/logo-kg-inkasso-small.svg");
+  --company-logo-background: var(--secondary-background-color);
+  --company-name: "Königs Inkasso GmbH";
+  --company-street: "Mühlenstr. 49";
+  --company-city: "47918 Tönisvorst";
+  --company-email: "post24@koenigs-inkasso.de";
+  --primary-company-color: #FE6253  ;
+  --secondary-company-color: #909090;
+  --tertiary-company-color: #DEDFE3;
+  --tertiary-company-color-light: #FDFDFD;
+  --website-standard-font-color-light: #FDFDFD;
+  --website-standard-font-color-dark: #000;
+  --primary-company-border-radius: 0px;
+  --company-font-family: 'Quicksand', sans-serif;
+  --company-font-weight: 300;
+  --company-font-size-title: 27px;
+  --company-font-size-subtitle: 18px;
+  --company-font-size-text: 18px;
+  --company-font-size-finePrint: 18px;
+  --company-font-size-button: 18px;
+  --form-and-field-company-color: #DEDFE3;
+  --primary-background-company-color: #ECECEC;
+  --modal-background: rgba(0, 0, 0, 0.5);
+  --clara-image-url: url("https://rosendo99er.github.io/images/F70BB42B-E612-4FBD-89ED-91230C60F476.PNG");
+
+
+
+  --primary-link-color: var(--primary-company-color);
+  --secondary-link-color: var(--secondary-company-color);
+
+
+  --body-background-color: var(--primary-background-company-Color);
+
+  --primary-border-color:   var(--form-and-field-company-color);
+  --secondary-border-color: var(--primary-company-color);
+  --tertiary-border-color:  var(--tertiary-company-color);
+
+
+  --primary-font-color: var(--primary-company-color);
+  --secondary-font-color: var(--secondary-company-color);
+  --tertiary-font-color:  var(--website-standard-font-color-light);
+  --tertiary-font-color-dark: var(--website-standard-font-color-dark);
+ 
+
+  --primary-button-color: var(--primary-company-color);
+  --secondary-button-color: var(--secondary-company-color);
+
+  --primary-loader-color: var(--tertiary-company-color-light);
+  --secondary-loader-color: var(--primary-company-color);
+
+  --primary-background-color: var(--primary-background-company-color);
+  --secondary-background-color: var(--tertiary-company-color-light);
+  --special-background-color: var(--primary-company-color);
+
+  --primary-border-radius: var(--primary-company-border-radius);
+
+  --font-size-title: var(--company-font-size-title);
+  --font-size-subtitle: var(--company-font-size-subtitle);
+  --font-size-text: var(--company-font-size-text);
+  --font-size-fineprint: var(--company-font-size-fineprint);
+  --font-size-button: var(--company-font-size-button);
+
+  --media-font-size-title: 21px;
+  --media-font-size-subtitle: 18px;
+  --media-font-size-text: 16px;
+  --media-font-size-fineprint: 12px;
+  --media-font-size-button: 16px;
+
+}
+
+
+/* ++++++++++++++++++++++++ Anwendung Clara free ++++++++++++++++++++++++ 
+
+:root {
+--rules-context: ChatbotIntern; 
+}
+
+html, body {
+  font-family: var(--company-font-family);
+  background-color: var(--primary-background-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  }
+
+
+#logo-header {
+    width: 100%;
+    height: 10vh;
+    min-height: 120px;
+    background-color: var(--company-logo-background);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+#footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--primary-company-color);
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    bottom: 0;
+    }
+
+
+#company-logo {
+    background-image: var(--company-logo-url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px; 
+    height: 80px;
+    
+}
+
+
+
+#section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-background-color);
+    border: 0px solid var(--secondary-border-color);
+    border-radius: var(--primary-border-radius);
+    overflow: hidden; 
+    box-sizing: border-box; 
+    width: 100%;
+    height: 80vh;
+    min-height: 815px;
+    z-index: 1;    
+  }
+
+#toggle-container {
+    display: block;
+    width: 1000px;
+    height: 60vh;
+    min-height: 790px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: var(--primary-background-color);
+    border: 0px solid var(--primary-border-color);
+    border-radius: var(--primary-border-radius);
+    overflow: hidden; 
+    box-sizing: border-box; 
+    padding: 5px;
+    z-index: 2;
+  }
+
+
+#title-container {
+  display: flex;
+}
+
+.title-content .custom0c-p {
+  display: none;
+}
+
+#clara-image {
+  display: block;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  html, body {
+    font-family: var(--company-font-family);
+    background-color: var(--primary-background-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #logo-header {
+    width: 100%;
+    height: 10vh;
+    min-height: 60px !important;
+    background-color: var(--company-logo-background);
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    padding: 0px !important;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+
+  #footer {
+    height: 10vh;
+    min-height: 60px;
+    }
+
+
+  #company-logo {
+    background-image: var(--company-logo-url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 200px; 
+    height: 80px;
+  }
+
+  #section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--primary-background-color);
+    border: 0px solid var(--secondary-border-color);
+    border-radius: 0 !important;
+    overflow: hidden; 
+    box-sizing: border-box; 
+    width: 100%;
+    height: 80vh !important;
+    min-height: 80vh !important;
+    z-index: 1;    
+  }
+
+  #toggle-container {
+    display: block;
+    width: 100%;
+    height: 80vh !important;
+    min-height: 80vh !important;
+    max-width: none;
+    max-height: 80% !important;
+    background-color: var(--primary-background-color);
+    border: 0px solid var(--primary-border-color) !important;
+    border-radius: 0 !important;
+    overflow: hidden; 
+    box-sizing: border-box; 
+    padding: 0px;
+    z-index: 2;
+  }
+
+
+  #chatbot-container {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 63vh !important;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    padding: 0px 2px 0px 2px;
+    border: 0px solid var(--tertiary-border-color);
+  }
+
+
+
+#chatbot {
+  width: 100%;
+  height: 63vh !important;
+  min-height: 63vh !important;
+  max-height: 63vh !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 2; 
+}
+
+
+
+#title-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  padding: 5px 0px 5px 0px !important; 
+  margin-top: 0px !important;
+  background-color: var(--primary-company-color) !important;
+}
+
+
+
+
+#title-container .title-content {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.title-content .custom0c-p {
+  display: block;
+  font-family: var(--company-font-family);
+  font-weight: 400 !important;
+  color: var(--tertiary-font-color) !important;
+  font-size: var(--media-font-size-title) !important;
+  margin: 0 !important;
+  text-align: center;
+  justify-content: center;  
+}
+
+    
+.title-content .custom0a-p {
+  display: none;
+}
+
+.title-content .custom0b-p {
+  display: none;
+}
+
+#clara-image {
+  display: none;
+}
+
+
+#chatbot-header {
+
+  display: flex; 
+  align-items: center; 
+  width: 100%; 
+  box-sizing: border-box; 
+  padding: 10px !important;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+#chatbot-input-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 10px !important;
+  box-sizing: border-box;
+  background-color: var(--secondary-background-color);
+  border-radius: 0px 0px var(--primary-border-radius) var(--primary-border-radius);
+  margin-top: 10px;
+  min-height: 60px !important;
+  z-index: 2;
+}
+
+
+
+#chatbot-input {
+  display: block !important;
+  font-family: var(--company-font-family) !important;
+  font-size: var(--media-font-size-text) !important;
+  color: var(--primary-font-color) !important;
+  font-weight: normal !important;
+  padding: 5px 10px 5px 10px !important;
+  border: 1px solid var(--primary-border-color) !important;
+  border-radius: var(--primary-border-radius) !important;
+  margin: 0px !important;
+  width: 100% !important;
+  height: 45px !important;
+  min-height: 45px !important;
+  max-height: 122px !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+  resize: vertical !important;
+}
+
+#chatbot-input:focus {
+  border-color: var(--secondary-border-color) !important;
+  outline: none !important;
+}
+
+
+
+#chatbot-input::placeholder {
+  color: var(--secondary-font-color);
+  font-family: var(--company-font-family);
+  font-size: var(--media-font-size-text);
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+
+}
+
+
+
+#contact-form-title-container {
+  display: none;
+}
+
+
+#contact-form-container {
+  display: none;
+}
+
+#input-button-container {
+  display: none;
+}
+
+
+#back-to-outlook-container {
+  display: none;
+}
+
+
+#instant-answer-dialog-button-container {
+  display: none;
+}
+
+.icon4 {
+    display: none;
+}
+
+#loader-container {
+  top: 60%;
+}
+
+
+
+  ++++++++++++++++++++++++ ENDE Anwendung Clara free ++++++++++++++++++++++++ */
+
+
+
+
+
+
+/* ++++++++++++++++++++++++ Anwendung Clara ++++++++++++++++++++++++ 
+
+:root {
+--rules-context: ChatbotConsumer; 
+}
+
+#logo-header {
+    display: none;
+}
+
+#footer {
+    display: none;
+}
+
+#title-container {
+  display: flex;
+}
+
+.title-content .custom0c-p {
+  display: none;
+}
+
+#clara-image {
+  display: block;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #title-container {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .title-content {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .title-content .custom0a-p {
+        margin-left: 0px;
+
+    }
+
+    .title-content .custom0b-p {
+        display: none;
+
+    }
+
+    .title-content .custom0c-p {
+        color: var(--primary-font-color);
+        font-size: var(--media-font-size-subtitle);
+        hyphens: auto;
+        word-wrap: break-word;  
+        margin-left: 0px;
+     }
+
+    #clara-image {
+        display: none;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}
+
+
+#contact-form-title-container {
+  display: none;
+}
+
+
+#contact-form-container {
+  display: none;
+}
+
+#input-button-container {
+  display: none;
+}
+
+
+#back-to-outlook-container {
+  display: none;
+}
+
+
+#chatbot-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+#instant-answer-dialog-button-container {
+  display: none;
+}
+
+.icon4 {
+    display: none;
+}
+
+#loader-container {
+  top: 60%;
+}
+
+
+  ++++++++++++++++++++++++ ENDE Anwendung Clara ++++++++++++++++++++++++ */
+
+
+
+
+/* ++++++++++++++++++++++++ Anwendung Chatbot mit Kontaktformular ++++++++++++++++++++++++ */
+
+:root {
+--rules-context: ChatbotContact; 
+}
+
+
+html, body {
+  font-family: var(--company-font-family);
+  background-color: var(--primary-background-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  }
+
+
+#logo-header {
+    width: 100%;
+    height: 10vh;
+    min-height: 120px;
+    background-color: var(--company-logo-background);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+#footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--primary-company-color);
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    bottom: 0;
+    }
+
+
+#company-logo {
+    background-image: var(--company-logo-url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px; 
+    height: 60px;
+    
+}
+
+
+
+#section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--primary-background-color);
+    border: 0px solid var(--secondary-border-color);
+    border-radius: var(--primary-border-radius);
+    overflow: hidden; 
+    box-sizing: border-box; 
+    width: 100%;
+    height: 80vh;
+    min-height: 815px;
+    z-index: 1;    
+  }
+
+#toggle-container {
+    display: block;
+    width: 1000px;
+    height: 60vh;
+    min-height: 790px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: var(--primary-background-color);
+    border: 0px solid var(--primary-border-color);
+    border-radius: 0;
+    overflow: hidden; 
+    box-sizing: border-box; 
+    padding: 0px;
+    z-index: 2;
+  }
+
+
+#title-container {
+  display: none;
+}
+
+#contact-form-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  padding: 5px 0px 5px 0px; 
+  margin-bottom: 20px;
+  background-color: var(--primary-company-color);
+}
+
+
+
+
+#contact-form-title-container .contact-form-title-content {
+    position: relative;
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    border: 0px solid #fff;
+    border-radius: 0;
+}
+
+
+.contact-form-title-content .contact-form-custom0c-p {
+  display: block;
+  font-family: var(--company-font-family);
+  font-weight: 400;
+  color: var(--tertiary-font-color);
+  font-size: var(--font-size-title);
+  margin: 0;
+  text-align: left;
+  justify-content: center;  
+  padding-left: 20px;
+}
+
+
+
+
+#clara-image {
+  display: none;
+}
+
+
+
+
+#contact-form-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-background-color);
+  border: 0px solid var(--secondary-border-color);
+  border-radius: 0;
+  overflow: hidden; 
+  box-sizing: border-box; 
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+#contact-form-container {
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 0px solid var(--secondary-border-color);
+  border-radius: 0;
+  padding: 0px 9px 0px 8px;
+  position: relative;
+  }
+
+
+
+
+#contact-form-aktennummer {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  height: 42px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#contact-form-aktennummer,
+#contact-form-aktennummer:focus,
+#contact-form-aktennummer:valid {
+    background-color: var(--primary-background-color);
+}
+
+
+#contact-form-aktennummer::placeholder {
+  color: var(--secondary-font-color);
+  font-size: var(--font-size-text);
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+
+
+
+#contact-form-name {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  height: 42px; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#contact-form-name,
+#contact-form-name:focus,
+#contact-form-name:valid {
+    background-color: var(--primary-background-color);
+}
+
+
+
+#contact-form-name::placeholder {
+  color: var(--secondary-font-color);
+  font-size: var(--font-size-text);
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+
+
+
+#contact-form-email {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  height: 42px; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+#contact-form-email::placeholder {
+  color: var(--secondary-font-color);
+  font-size: var(--font-size-text);
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+
+
+
+#contact-form-nachricht {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  overflow: auto;
+  white-space: normal;
+  max-height: calc(1.5em * 6 + 20px);
+}
+
+
+
+
+#modalMessage {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none; 
+  box-sizing: border-box;
+  overflow: auto;
+  white-space: normal;
+  max-height: calc(1.5em * 6 + 20px);
+}
+
+
+
+
+
+#contact-form-nachricht,
+#contact-form-nachricht:focus,
+#contact-form-nachricht:valid {
+    background-color: var(--primary-background-color);
+}
+
+#modalMessage,
+#modalMessage:focus,
+#modalMessage:valid {
+    background-color: var(--primary-background-color);
+}
+
+
+
+
+
+
+
+
+#contact-form-nachricht::placeholder {
+  color: var(--secondary-font-color);
+  font-size: var(--font-size-text);
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+
+
+#modalMessage::placeholder {
+  color: var(--secondary-font-color);
+  font-size: var(--font-size-text);
+  font-style: italic;
+  padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+#contact-form-container {
+  display: block;
+}
+
+#input-button-container {
+  display: flex;
+}
+
+
+#back-to-outlook-container {
+  display: none;
+}
+
+
+#chatbot-container {
+  display: none;
+  margin-top: -80px;
+}
+
+#instant-answer-dialog-button-container {
+  display: flex;
+}
+
+#loader-container {
+  top: 70%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+html, body {
+  font-family: var(--company-font-family);
+  background-color: var(--primary-background-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#logo-header {
+  width: 100%;
+  height: 10vh;
+  min-height: 60px !important;
+  background-color: var(--company-logo-background);
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  padding: 0px !important;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+
+
+#footer {
+  height: 10vh;
+  min-height: 60px;
+  }
+
+
+#company-logo {
+  background-image: var(--company-logo-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 200px; 
+  height: 40px;
+}
+
+
+#contact-form-title-container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  padding: 5px 0px 5px 0px !important; 
+  margin-top: 0px !important;
+  background-color: var(--primary-company-color) !important;
+}
+
+
+
+
+#contact-form-title-container .contact-form-title-content {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.contact-form-title-content .contact-form-custom0c-p {
+  display: block;
+  font-family: var(--company-font-family);
+  font-weight: 400 !important;
+  color: var(--tertiary-font-color) !important;
+  font-size: var(--media-font-size-title) !important;
+  margin: 0 !important;
+  text-align: center;
+  justify-content: center;  
+}
+
+
+#contact-form-aktennummer {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+#contact-form-name {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  height: 35px; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+#contact-form-email {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  height: 35px; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+
+
+
+#contact-form-nachricht {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  flex: 1;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  overflow: auto;
+  white-space: normal;
+  max-height: calc(1.2em * 4 + 20px) !important;
+}
+
+
+
+#section-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--primary-background-color);
+  border: 0px solid var(--secondary-border-color);
+  border-radius: 0 !important;
+  overflow: hidden; 
+  box-sizing: border-box; 
+  width: 100%;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  z-index: 1;    
+}
+
+#toggle-container {
+  display: block;
+  width: 100%;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-width: none;
+  max-height: 100% !important;
+  background-color: var(--primary-background-color);
+  border: 0px solid var(--primary-border-color) !important;
+  border-radius: 0 !important;
+  overflow: hidden; 
+  box-sizing: border-box; 
+  padding: 0px;
+  z-index: 2;
+}
+
+
+#chatbot-container {
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90vh !important;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  padding: 0px;
+  border: 0px solid var(--primary-border-color) !important;
+}
+
+
+
+#chatbot {
+  width: 100%;
+  height: 63vh !important;
+  min-height: 63vh !important;
+  max-height: 63vh !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  border: 1px solid var(--primary-border-color) !important;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 2; 
+}
+
+
+#chatbot-header {
+
+display: flex; 
+align-items: center; 
+width: 100%; 
+box-sizing: border-box; 
+padding: 10px !important;
+border-bottom: 1px solid #ddd;
+}
+
+
+
+#chatbot-input-container {
+display: flex;
+flex-direction: column;
+height: auto;
+width: 100%;
+padding: 10px !important;
+box-sizing: border-box;
+background-color: var(--secondary-background-color);
+border-radius: 0px 0px var(--primary-border-radius) var(--primary-border-radius);
+margin-top: 10px;
+min-height: 60px !important;
+z-index: 2;
+}
+
+
+
+#chatbot-input {
+display: block !important;
+font-family: var(--company-font-family) !important;
+font-size: var(--media-font-size-text) !important;
+color: var(--primary-font-color) !important;
+font-weight: normal !important;
+padding: 5px 10px 5px 10px !important;
+border: 1px solid var(--primary-border-color) !important;
+border-radius: var(--primary-border-radius) !important;
+margin: 0px !important;
+width: 100% !important;
+height: 45px !important;
+min-height: 45px !important;
+max-height: 122px !important;
+overflow-y: auto !important;
+box-sizing: border-box !important;
+resize: vertical !important;
+}
+
+#chatbot-input:focus {
+border-color: var(--secondary-border-color) !important;
+outline: none !important;
+}
+
+
+
+#chatbot-input::placeholder {
+color: var(--secondary-font-color);
+font-family: var(--company-font-family);
+font-size: var(--media-font-size-text);
+font-style: italic;
+font-weight: normal;
+padding-left: 0px;
+}
+
+
+
+#contact-form-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 0px solid var(--secondary-border-color);
+  border-radius: 0;
+  padding: 0px 9px 0px 8px;
+  position: relative;
+  }
+
+
+
+}
+
+
+
+ /* ++++++++++++++++++++++++ ENDE Anwendung Chatbot mit Kontaktformular ++++++++++++++++++++++++ */
+
+
+
+/* ++++++++++++++++++++++++ Anwendung Chatbot mit Outlook ++++++++++++++++++++++++ 
+
+:root {
+--rules-context: ChatbotOutlook; 
+}
+
+#logo-header {
+    display: none;
+}
+
+#footer {
+    display: none;
+}
+
+
+#title-container {
+  display: none;
+}
+
+#clara-image {
+  display: none;
+}
+
+
+
+#contact-form-title-container {
+  display: none;
+}
+
+
+
+
+#contact-form-container {
+  display: block;
+}
+
+
+#contact-form-email {
+  display: none;
+}
+
+
+#contact-form-name {
+  display: none;
+}
+
+
+#input-button-container {
+  display: flex;
+}
+
+
+#back-to-outlook-container {
+  display: flex;
+}
+
+
+#chatbot-container {
+  display: none;
+  margin-top: -335px;
+}
+
+#instant-answer-dialog-button-container {
+  display: flex;
+}
+
+#loader-container {
+  margin-top: -270px;
+  top: 50%;
+}
+
+#input-button-container {
+  display: none;
+}
+
+
+ ++++++++++++++++++++++++ ENDE Anwendung Chatbot mit Outlook ++++++++++++++++++++++++ */
+
+
+
+
+ 
+
+
+/* Für kleine Bildschirme (maximale Breite: 576px) */
+@media screen and (max-width: 600px) {
+
+    :root {
+        --font-size-title: var(--media-font-size-title) !important;
+        --font-size-subtitle: var(--media-font-size-subtitle) !important;
+        --font-size-text: var(--media-font-size-text) !important;
+        --font-size-fineprint: var(--media-font-size-fineprint) !important;
+        --font-size-button: var(--font-size-button) !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    
+  #title-container {
+      flex-shrink: 0; /* Höhe richtet sich nach dem Inhalt, schrumpft nicht */
+    }
+
+  #chatbot-consent-container {
+      flex-shrink: 0; /* Höhe richtet sich nach dem Inhalt, schrumpft nicht */
+    }
+ 
+  
+
+
+    
+    
+    
+
+    .modal-standard-inner {
+        width: 90%;
+        max-width: 90%;
+        height: 70vh;
+    }
+
+    #chatbot-consent-label {
+      font-size: var(--media-font-size-fineprint) !important;
+    }
+
+    .special-link-consent {
+      font-size: var(--media-font-size-fineprint) !important;
+    }
+
+
+#chatbot-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  border-bottom: 0px solid var(--primary-border-color); /* aktuell ausgeblendet */
+  box-sizing: border-box;
+  padding: 20px !important;
+}
+
+
+
+
+#chatbot-messages-gpt div {
+  border-radius: var(--primary-border-radius);
+  font-family: var(--company-font-family);
+  font-size: var(--media-font-size-text) !important;
+  overflow-x: hidden; 
+}
+
+
+
+#chatbot-messages-gpt .user-message {
+  padding: 0px 0px 20px 30px !important;
+  background-color: var(--primary-background-color);
+  color: var(--secondary-font-color);
+  font-family: var(--company-font-family);
+  font-size: var(--media-font-size-text) !important;
+  font-weight: bold;
+  text-align: right !important;
+  margin-top: 0px !important;
+}
+
+
+#chatbot-messages-gpt .bot-message {
+  padding: 0px 0px 20px 0px !important; 
+  font-family: var(--company-font-family);
+  background-color: var(--primary-background-color);
+  text-align: left;
+  color: var(--website-standard-font-color-dark);
+  margin-top: 0px !important; 
+  }
+
+
+
+
+.special-link {
+  color: var(--primary-link-color) !important;
+  text-decoration: underline;
+}
+
+
+
+.special-link:visited {
+  color: var(--secondary-link-color) !important;
+}
+
+
+.special-heading {
+  color: var(--primary-company-color);
+  font-family: var(--company-font-family);
+  font-size: var(--media-font-size-text) !important;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+
+.special-heading-in-standard-color {
+  color: var(--website-standard-font-color-dark);
+  font-family: var(--company-font-family);
+  font-size: var(--media-font-size-text) !important;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+
+.send-confirmation {
+  position: fixed;
+  z-index: 9999999 !important;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 80% !important;
+  display: flex; /* Flexbox für Zentrierung */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--modal-background);
+  box-sizing: border-box;
+  pointer-events: auto; /* Interaktionen sind erlaubt */
+}
+
+
+
+/* Stile für den help-modal-dialog (hmd) */
+.hmd-dialog {
+  z-index: 10000000 !important;
+  position: absolute;
+  left: 50%;
+  top: 60% !important;
+  width: 90% !important;
+  height: 80% !important;
+  background-color: var(--primary-background-color);
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Inhalt und Buttons vertikal anordnen */
+  justify-content: space-between; /* Zwischen Inhalt und Button Abstand lassen */
+  transform: translate(-50%, -50%); /* Zentriert den Dialog */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Schatten für besseren Effekt */
+  padding: 0px; /* aktuell kein Innenabstand */
+  border: 2px solid var(--primary-border-color);
+  border-radius: var(--primary-border-radius);
+  box-sizing: border-box;
+  pointer-events: auto; /* Interaktionen sind erlaubt */
+}
+
+
+
+.hmd-content {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    overflow-y: auto; /* Vertikales Scrollen erlauben */
+    max-height: calc(100% - 80px); /* Höchstens so hoch wie der Dialog minus Platz für Buttons */
+    width: 100%;
+    max-width: none; /* Breite begrenzen */
+    box-sizing: border-box; /* Berücksichtigt Padding in der Breite */
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+    padding: 0px !important;
+}
+
+.hmd-content .custom-h2 {
+    padding: 20px 20px 0px 20px !important;
+    border-radius: var(--primary-border-radius);
+    text-align: left;
+    font-size: var(--font-size-title) !important;
+    color: var(--primary-font-color);
+}
+
+.hmd-content .custom-h3 {
+    padding: 20px 20px 0px 20px !important;
+    border-radius: var(--primary-border-radius);
+    text-align: left;
+    font-size: var(--font-size-subtitle) !important;
+    font-weight: bold;
+    color: var(--secondary-font-color);
+}
+
+
+
+.hmd-content p {
+    font-size: var(--font-size-text);
+    color: var(--website-standard-font-color-dark);
+    padding: 20px !important;
+    margin: 0px;
+
+
+}
+
+
+.hmd-content-ul {
+    margin-left: 0px !important;
+    padding-right: 10px;
+}
+
+
+
+.hmd-content li {
+    font-size: var(--font-size-text) !important;
+    color: var(--website-standard-font-color-dark);
+    margin-bottom: 10px;
+    line-height: 1.2 !important;
+    list-style-type: disc;
+    padding-left: 0px !important;
+
+}
+
+
+
+.hmd-button-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Buttons im Dialog */
+    gap: 10px; /* Abstand zwischen den Buttons */
+    margin-top: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--tertiary-border-color);
+}
+
+
+
+.hmd-button {
+    font-family: var(--company-font-family);  
+    font-size: var(--font-size-button);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-button-color);
+    color: var(--tertiary-font-color);
+    cursor: pointer;
+    min-width: 150px; /* Verhindert Umbruch und sorgt für gleichmäßige Breite */
+    text-align: center; /* Text zentriert im Button */
+}
+
+.hmd-button:hover {
+    background-color: var(--secondary-button-color);
+}
+
+
+.send-confirmation-dialog {
+    z-index: 10000000 !important;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    left: 50%;
+    top: 50%;
+    width: 90vh !important;
+    max-width: 90% !important;
+    height: auto;
+    max-height: 75vh;
+    transform: translate(-50%, -50%); /* Zentriert den Dialog */
+    pointer-events: auto; /* Interaktionen sind erlaubt */
+    box-sizing: border-box;
+    border: 2px solid var(--primary-border-color);
+    border-radius: var(--primary-border-radius);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Schatten für besseren Effekt */
+    overflow: hidden; /* Verhindert, dass der Inhalt den Container überschreitet */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}   /* Ende der Media Queries */
+
+
+
+
+    #chatbot-header {
+
+      display: flex; /* Flexbox zur horizontalen Anordnung der Kind-Elemente */
+      align-items: center; /* Zentriert die Inhalte vertikal */
+      width: 100%; /* Nimmt die gesamte Breite des übergeordneten Elements ein */
+      box-sizing: border-box; /* Schließt Padding in die Gesamtbreite ein */
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+
+    #chatbot-language {
+      display: flex;
+      align-items: center; /* Zentriert Flagge und Sprache vertikal */
+      width: 130px;
+      max-width: 40%; /* Nimmt 40 % der Breite von `#chatbot-header` ein */
+      position: relative; /* Ermöglicht absolute Positionierung der Flagge */
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+
+    #selected-flag {
+      margin-right: 5px;/* Fügt einen Abstand zwischen Fahne und Dropdown ein */
+    }
+
+
+
+    /* Dropdown-Styling für #language-dropdown */
+    #language-dropdown {
+      width: 100%; /* Nimmt die volle Breite der jeweiligen Container ein */
+      padding: 5px; /* Optionales Padding für bessere Lesbarkeit */
+      box-sizing: border-box; /* Bezieht Padding in die Gesamtbreite ein */
+      font-family: var(--company-font-family);
+      font-size: var(--font-size-text);
+      color: var(--primary-font-color);
+      border: none;
+      background-color: var(--primary-background-color); /* Setzt die Hintergrundfarbe */
+      margin-left: 20px;
+    }
+
+
+    /* Themenbereich in der Mitte, ebenfalls 40 % der Breite */
+    #chatbot-themes {
+      display: flex;
+      align-items: center; /* Zentriert das Dropdown vertikal */
+      width: 100px; 
+      max-width: 40%; /* Nimmt 40 % der Breite von `#chatbot-header` ein */
+      justify-content: center; /* Zentriert das Dropdown horizontal */
+      margin-left: 10px;
+    }
+
+    /* Dropdown-Styling für #theme */
+    #theme {
+      width: 100%; /* Nimmt die volle Breite der jeweiligen Container ein */
+      padding: 5px; /* Optionales Padding für bessere Lesbarkeit */
+      box-sizing: border-box; /* Bezieht Padding in die Gesamtbreite ein */
+      font-family: var(--company-font-family);
+      font-size: var(--font-size-text);
+      color: var(--primary-font-color);
+      border: none;
+      background-color: var(--primary-background-color); /* Setzt die Hintergrundfarbe */
+    }
+
+    /* Rechtsseitiger Bereich für Icons, nimmt 20 % der Breite ein */
+    #chatbot-icons {
+      display: flex;
+      align-items: center; /* Zentriert die Icons vertikal */
+      justify-content: flex-end; /* Positioniert Icons rechts im Header */
+      flex-grow: 1;
+      width: 20%; /* Nimmt 20 % der Breite von `#chatbot-header` ein */
+    }
+
+    
+
+
+
+
+
+
+
+
+/* Hintergrund-Elemente blockieren */
+body.modal-open {
+    overflow: hidden; /* Verhindert Scrollen */
+    pointer-events: none; /* Keine Interaktion mit dem Rest der Seite */
+}
+
+/* Pointer-Events nur für Modal-Elemente erlauben */
+.modal,
+.modal * {
+    pointer-events: auto;
+}
+
+
+
+
+.website-standard-font {
+  color: var(--website-standard-font-color-dark);
+}
+
+
+
+
+
+#chatbot-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 60vh; /* Mindesthöhe für den Container */
+  box-sizing: border-box;
+  overflow: hidden; /* Verhindert ungewolltes Scrollen */
+  padding: 0px 9px 0px 8px;
+}
+
+
+
+
+#instant-answer-dialog-button-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100px; /* Mindesthöhe für den Container */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Verhindert ungewolltes Scrollen */
+  padding: 0px 9px 0px 8px;
+  margin-top: -20px;
+}
+
+
+
+
+#instant-answer-dialog-button {
+  display: block;
+  width: 100%;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  margin: 20px; /* Passt den Abstand an */
+  }
+
+#instant-answer-dialog-button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+
+
+#instant-answer-dialog-schliessen-button {
+  display: none;
+  width: 100%;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  margin: 20px; /* Passt den Abstand an */
+  }
+
+#instant-answer-dialog-schliessen-button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+#message-send-button {
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  margin: 0px; /* Passt den Abstand an */
+  }
+
+#message-send-button :hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+
+
+/*#instant-answer-button {
+  display: block;
+  width: 100%;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  margin: 10px; 
+}*/
+
+/*#instant-answer-button:hover {
+  background-color: var(--secondary-button-color);
+}*/
+
+
+
+
+#chatbot {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  border: 2px solid var(--secondary-company-color); /*var(--tertiary-border-color);*/
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 2; 
+}
+
+
+
+/* Stil für den Titel Container */
+#title-container {
+  flex-direction: row;
+  justify-content: space-between; /* Verteilt den Text und das Bild am Rand */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Verhindert ungewolltes Scrollen */
+  padding: 0px 9px 0px 8px;
+  position: relative;
+  }
+
+
+
+
+.title-content {
+    position: relative;
+    width: 70%;
+    text-align: left;
+}
+
+
+
+.title-content .custom0a-p {
+  font-family: var(--company-font-family);
+  font-weight: bold;
+  color: var(--primary-font-color);
+  font-size: var(--font-size-title);
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+
+.title-content .custom0b-p {
+  font-family: var(--company-font-family);
+  color: var(--primary-font-color);
+  font-size: var(--font-size-subtitle);
+  hyphens: auto;
+  word-wrap: break-word;  
+  margin-left: 0px;
+  line-height: 1.5;
+}
+
+
+
+
+#clara-image {
+  background-image: var(--clara-image-url);
+  background-size: cover; /* Damit das Bild den gesamten Container ausfüllt */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20%;
+  height: 0; /* Höhe wird durch Padding simuliert */
+  padding-bottom: 20%; /* Höhe wird durch das Verhältnis der Breite bestimmt */
+  margin-right: 0px;
+  margin-top: 5px;
+  border-radius: var(--primary-border-radius); /* Abgerundete Ecken */
+  overflow: hidden; /* Verhindert, dass das Bild über die abgerundeten Ecken hinaus angezeigt wird */
+}
+
+
+
+
+
+
+
+
+
+/* Äußerer Container für den Bereich Consent */
+#chatbot-consent-container {
+  display: block;
+  padding: 10px 10px 10px 0px;
+  border-bottom: 0px solid var(--primary-border-color);
+}
+
+
+
+
+/* Stil für das Einverständnisformular des Chatbots */
+#chatbot-consent {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+
+
+/* Checkbox */
+#chatbot-consent-checkbox {
+  margin-left: 0px; /* Verschiebe die Checkbox nach rechts */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--tertiary-border-color);
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box; /* Wichtige Einstellung für richtige Breitenberechnung */
+  flex-shrink: 0; /* Verhindert, dass die Checkbox durch Flexbox verkleinert wird */
+  z-index: 1;
+}
+
+
+
+#chatbot-consent-checkbox:checked {
+  background-color: var(--special-background-color);
+  border-color: var(--secondary-border-color);
+}
+
+#chatbot-consent-checkbox:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid var(--tertiary-font-color);
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+#chatbot-consent label {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-finePrint);
+  margin-left: 10px;
+}
+
+
+
+
+#chatbot-messages {
+  flex-grow: 1;
+  overflow-y: auto; /* Ermöglicht Scrollen, wenn Nachrichten den Bereich überlaufen */
+  border-bottom: 0px solid var(--primary-border-color); /* aktuell ausgeblendet */
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Übergeordneter Stil für die Suggested Questions */
+#suggested-questions {
+  padding: 15px 10px 15px 35px;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+
+
+
+.suggested-title {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+}
+
+
+
+
+
+.suggested-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+.suggested-question-item {
+    display: none;
+    /*font-size: var(--font-size-text);
+    font-family: var(--company-font-family);
+    background-color: var(--secondary-background-color); 
+    border: 1px solid var(--primary-border-color);
+    padding: 8px 15px;
+    border-radius:  var(--primary-border-radius);
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;*/
+}
+
+
+
+
+
+.suggested-question-item:hover {
+    background-color: var(--primary-background-color); /* Hintergrund beim Hover in primary background color*/
+    border-color: var(--primary-border-color); /* Umrandung beim Hover in primary border color*/
+}
+
+
+
+
+
+
+
+
+
+/* Stilierung des Bereichs für die eingefügten Fragen und Antworten im Chatbot */
+#chatbot-messages-gpt div {
+  border-radius: var(--primary-border-radius);
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text); /* Schriftgröße für Nachrichten */
+  text-align: left;
+}
+
+
+
+/* Stil für die Nachrichten des Benutzers */
+#chatbot-messages-gpt .user-message {
+  padding: 10px 20px 15px 35px;
+  background-color: var(--primary-background-color);
+  color: var(--secondary-font-color);
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  text-align: left;
+  margin-top: 15px; /* Kleinere Abstände zwischen den Nachrichten */
+}
+
+
+
+
+/* Stil für die Nachrichten des Bots */
+#chatbot-messages-gpt .bot-message {
+  font-family: var(--company-font-family);
+  padding: 5px 20px 15px 35px;
+  background-color: var(--primary-background-color);
+  text-align: left;
+  color: var(--website-standard-font-color-dark);
+  margin-top: 0; /* Kleinere Abstände */
+  }
+
+
+
+
+
+
+
+/* Special Links */
+.special-link-consent {
+  color: var(--primary-link-color) !important;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  text-decoration: underline; /* Optional, wenn du möchtest, dass Links unterstrichen sind */
+}
+
+.special-link-consent:visited {
+  color: var(--secondary-link-color) !important; /* Falls du eine spezifische Farbe für besuchte Links möchtest */
+}
+
+
+/* Stil für den Consent-Text */
+#chatbot-consent-label {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Special Links */
+.special-link {
+  color: var(--primary-link-color) !important;
+  text-decoration: underline; /* Optional, wenn du möchtest, dass Links unterstrichen sind */
+}
+
+
+
+
+
+.special-link:visited {
+  color: var(--secondary-link-color) !important; /* Falls du eine spezifische Farbe für besuchte Links möchtest */
+}
+
+
+
+
+/* Überschriften im Chatbot */
+.special-heading {
+  color: var(--primary-company-color);
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+
+.special-heading-in-standard-color {
+  color: var(--website-standard-font-color-dark);
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* Stil für den Chatbot Input Container */
+#chatbot-input-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--secondary-background-color);
+  border-radius: 0px 0px var(--primary-border-radius) var(--primary-border-radius);
+  margin-top: 10px;
+  z-index: 2;
+}
+
+
+
+
+
+/* Stil für den Chatbot Input Inner Container */
+#chatbot-input-inner-container {
+  display: flex; /* Flexbox aktivieren */
+  justify-content: space-between; /* Teilt den Platz zwischen den Containern auf */
+  align-items: center; /* Zentriert die Elemente vertikal */
+  width: 100%;
+}
+
+
+
+/* Stil für das Eingabefeld im Chatbot */
+#input-left {
+  display: flex;
+  height:auto;
+  align-items: center; /* Vertikale Zentrierung des Icons */
+  justify-content: flex-start; /* Links ausrichten */
+  flex-grow: 1;
+}
+
+
+
+/* Stil für das SVG Icon */
+#input-right {
+  display: flex; /* Flexbox für das Icon */
+  align-items: center; /* Vertikale Zentrierung des Icons */
+  justify-content: center; /* Zentrierung innerhalb des Containers */
+  width: 30px;
+  height: 30px;
+  margin-left:10px;
+  margin-right: 0px;
+  cursor: pointer;    
+}
+
+
+
+
+
+
+
+/* Stil für das Eingabefeld im Chatbot */
+#chatbot-input {
+  flex-grow: 1;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  padding: 10px 10px 10px 30px;
+  border: 0px solid var(--primary-border-color);
+  border-radius: var(--primary-border-radius);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 45px; /* Höhe */
+  min-height: 45px; /* Minimale Höhe */
+  max-height: 200px; /* Maximale Höhe */
+  max-width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  position: relative;
+  resize: vertical;
+  }
+
+
+
+
+/* Stil für den Platzhaltertext im Eingabefeld */
+#chatbot-input::placeholder {
+  color: var(--secondary-font-color);
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+
+
+
+/* Symbol für die Vergrößerung im Input-Feld */
+#expand-icon {
+  position: absolute;
+  bottom: 10px; /* Positionierung innerhalb des Input-Felds */
+  right: 10px; /* Positionierung innerhalb des Input-Felds */
+  font-size: 20px;
+  color: var(--primary-font-color);
+  cursor: pointer;
+}
+
+
+
+
+
+/* Modal-Dialog korrekt zentrieren und anpassen */
+#chatbot-input-modal {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  /* Größe des Modals */
+  width: 80%;
+  max-width: 800px;
+  height: 60vh;
+  background-color: var(--primary-background-color);
+  padding: 20px;
+  border-radius: var(--primary-border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+
+/* Modal textarea styling */
+#expanded-chatbot-input  {
+  width: 100%;
+  height: calc(100% - 40px);
+  padding: 10px;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  border: none;
+  outline: none;
+  background-color: var(--primary-background-color);
+  box-sizing: border-box;
+  overflow: auto;
+  resize: none;
+}
+
+
+
+/* Mikrofon Button */
+#micButton {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin-top: 10px;
+}
+
+
+
+/* Mikrofon-aktiv Styles */
+#micButton.active {
+  background-color: var(--secondary-company-color);
+  color: white;
+}
+
+
+
+
+/* OK Button */
+#modal-ok-button {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+
+#modal-ok-button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+
+
+/* Container für die Button im Eingabebereich */
+#input-button-container {
+  position: relative;
+  bottom: 0;
+  justify-content: flex-start; /* Buttons linksbündig platzieren */
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-top: 0px;
+  z-index: 2;
+  }
+
+
+
+/* Container für die Outlook-Integrations-Button */
+#back-to-outlook-container {
+  position: fixed;
+  bottom: 0px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin-top: 15px;
+  z-index: 2;
+  }
+
+
+
+
+
+/* Senden Button im Eingabebereich */
+#chatbot-send-button {
+  width: 100%;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 25px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+}
+
+
+
+
+
+#chatbot-send-button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+/* Leeren Button im Eingabebereich */
+#chatbot-clear-button {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+}
+
+
+#chatbot-clear-button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+/* BackToContactForm Button */
+.okAndnotOK-Button {
+  z-index: 1000;
+  width: 100%;
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+}
+
+
+.okAndnotOK-Button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+
+
+/* Hilfe anzeigen Button */
+#chatbot-Help-button {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-font-color);
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+
+
+#chatbot-chatbot-Help-button:hover {
+  background-color: var(--secondary-button-color);
+}
+
+
+
+
+#loader-container {
+  display: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  max-width: 80%;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center; /* Horizontale Zentrierung */
+  align-items: center;    /* Vertikale Zentrierung */
+  z-index: 1000;
+  }
+
+
+
+
+
+#loader {
+  margin: 0px;
+  padding: 0px;
+  border: 8px solid var(--primary-loader-color);
+  border-top: 8px solid var(--secondary-loader-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  display: none; /* Immer noch versteckt, bis es gebraucht wird */
+  z-index: 999; /* Höchste Priorität, damit es alles andere überlagert */
+}
+
+
+#loader-text {
+  font-family: var(--company-font-family);
+  font-size: var(--primary-font-size);
+  color: #fff;
+  background-color: var(--primary-company-color);
+  border-radius: var(--primary-border-radius);
+  display: none; /* Versteckt, bis es gebraucht wird */
+  z-index: 999; /* Auch überlagert das Layout */
+  padding: 10px 20px; /* Mehr Platz innerhalb des Containers */
+  text-align: center; /* Text zentrieren */
+  max-width: 100%; /* Maximal 90% der Bildschirmbreite */
+  margin-top: 15px;
+  /* white-space: nowrap; Verhindert das Umbrechen des Textes */
+  
+  }
+
+
+/* Animation für den loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* Stile für den help-modal-dialog (hmd) */
+.hmd-dialog {
+    z-index: 10000000 !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    background-color: var(--primary-background-color);
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Inhalt und Buttons vertikal anordnen */
+    justify-content: space-between; /* Zwischen Inhalt und Button Abstand lassen */
+    transform: translate(-50%, -50%); /* Zentriert den Dialog */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Schatten für besseren Effekt */
+    padding: 0px; /* aktuell kein Innenabstand */
+    border: 2px solid var(--primary-border-color);
+    border-radius: var(--primary-border-radius);
+    box-sizing: border-box;
+    pointer-events: auto; /* Interaktionen sind erlaubt */
+}
+
+
+
+
+.hmd-content {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    overflow-y: auto; /* Vertikales Scrollen erlauben */
+    max-height: calc(100% - 80px); /* Höchstens so hoch wie der Dialog minus Platz für Buttons */
+    width: 100%;
+    max-width: none; /* Breite begrenzen */
+    box-sizing: border-box; /* Berücksichtigt Padding in der Breite */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+
+
+
+.hmd-content .custom-h2 {
+    padding: 20px 0px 20px 0px;
+    border-radius: var(--primary-border-radius);
+    text-align: left;
+    font-size: var(--company-font-size-title);
+    color: var(--primary-font-color);
+}
+
+.hmd-content .custom-h3 {
+    padding: 20px 0px 0px 0px;
+    border-radius: var(--primary-border-radius);
+    text-align: left;
+    font-size: var(--company-font-size-subtitle);
+    font-weight: bold;
+    color: var(--secondary-font-color);
+}
+
+
+
+.hmd-content p {
+    font-size: var(--font-size-text);
+    color: var(--website-standard-font-color-dark);
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+
+.hmd-content-ul {
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.hmd-content li {
+    font-size: var(--font-size-subtitle);
+    color: var(--website-standard-font-color-dark);
+    margin-bottom: 10px;
+    line-height: 1.5;
+    list-style-type: disc; /* Stellt sicher, dass Aufzählungspunkte erhalten bleiben */
+    padding-left: 0px;
+
+}
+
+
+
+.hmd-button-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Buttons im Dialog */
+    gap: 10px; /* Abstand zwischen den Buttons */
+    margin-top: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--tertiary-border-color);
+}
+
+
+
+.hmd-button {
+    font-family: var(--company-font-family);  
+    font-size: var(--font-size-button);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-button-color);
+    color: var(--tertiary-font-color);
+    cursor: pointer;
+    min-width: 150px; /* Verhindert Umbruch und sorgt für gleichmäßige Breite */
+    text-align: center; /* Text zentriert im Button */
+}
+
+.hmd-button:hover {
+    background-color: var(--secondary-button-color);
+}
+
+
+
+
+
+/* Stile für das confirm-and-close-modal (ccm) */
+.ccm-dialog {
+    display: none;
+    border: 2px solid black;
+    border-radius: var(--primary-border-radius);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Schatten für besseren Effekt */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccm-content {
+    background-color: var(--primary-background-color);
+    padding: 20px;
+    border-radius: var(--primary-border-radius);
+    text-align: center;
+    width: auto; /* Entfernt die feste Breite */
+    max-width: 90%; /* Begrenzt die Breite auf maximal 90% des Viewports */
+    box-sizing: border-box; /* Berücksichtigt Padding in der Breite */
+}
+
+.ccm-content p {
+    color: var(--secondary-font-color);
+    text-align: center;
+    padding: 0px;
+    margin: 0 auto; /* Entfernt unerwünschte Abstände */
+    width: 100%; /* Nimmt die volle Breite des Containers ein */
+    display: block; /* Stellt sicher, dass der Text als Block angezeigt wird */
+    font-size: var(--company-font-size-text);
+    font-family: var(--company-font-family);
+    font-weight: 500;
+}
+
+
+
+.ccm-button-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Buttons im Dialog */
+    gap: 10px; /* Abstand zwischen den Buttons */
+    margin-top: 30px;
+}
+
+.ccm-button {
+    font-family: var(--company-font-family);
+    font-size: var(--font-size-button);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-button-color);
+    color: var(--tertiary-font-color);
+    cursor: pointer;
+    min-width: 150px; /* Verhindert Umbruch und sorgt für gleichmäßige Breite */
+    text-align: center; /* Text zentriert im Button */
+}
+
+.ccm-button:hover {
+    background-color: var(--secondary-button-color);
+}
+
+
+
+
+
+.send-confirmation {
+    position: fixed;
+    z-index: 9999999 !important;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-background);
+    box-sizing: border-box;
+    pointer-events: auto;
+}
+
+
+
+.send-confirmation-dialog {
+    z-index: 10000000 !important;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    max-width: 60vh;
+    height: auto;
+    max-height: 75vh;
+    transform: translate(-50%, -50%); /* Zentriert den Dialog */
+    pointer-events: auto; /* Interaktionen sind erlaubt */
+    box-sizing: border-box;
+    border: 2px solid var(--primary-border-color);
+    border-radius: var(--primary-border-radius);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Schatten für besseren Effekt */
+    overflow: hidden; /* Verhindert, dass der Inhalt den Container überschreitet */
+}
+
+
+
+.send-confirmation-content {
+    flex: 1; 
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding: 40px;
+    max-height:50vh;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-border-color);
+    border-radius: var(--primary-border-radius);
+}
+
+
+
+.send-confirmation-content .custom2-h2 {
+    font-size: var(--company-font-size-title);
+    color: var(--primary-font-color);
+    margin-bottom: 30px;
+}
+
+
+.send-confirmation-content .custom3-h2 {
+    font-size: var(--company-font-size-subtitle);
+    color: var(--secondary-font-color);
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+
+.send-confirmation-content p {
+    font-size: var(--company-font-size-text);
+    color: var(--tertiary-font-color-dark);
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.send-confirmation-content .email-nachricht {
+  font-family: var(--company-font-family);
+  font-size: var(--font-size-text);
+  color: var(--primary-font-color);
+  font-weight: normal;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: var(--primary-border-radius);
+  background-color: var(--primary-background-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  max-height: calc(1.5em * 6 + 20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.send-confirmation-button-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Buttons im Dialog */
+    gap: 10px; /* Abstand zwischen den Buttons */
+    margin-top: 10px; /* Abstand zum vorherigen Inhalt */
+    padding: 20px; /* Optional: Abstand innerhalb des Containers */
+    background-color: var(--primary-background-color); /* Optional: Hintergrund für besseren Kontrast */
+    box-sizing: border-box;
+    border-top: 1px solid var(--tertiary-border-color);
+}
+
+
+
+
+.icon {
+    width: 30px;             /* Standardgröße (Breite) des Icons */
+    height: 30px;            /* Standardgröße (Höhe) des Icons */
+    stroke: var(--primary-font-color);
+    fill: none;
+    cursor: pointer;         /* Zeiger als Cursor, geeignet für klickbare Icons */
+    transition: all 0.3s ease; /* Weiche Übergänge für alle Änderungen (Größe, Farbe etc.) */
+}
+
+
+.icon.hover-scale:hover {
+    transform: scale(1.2);   /* Vergrößert das Icon leicht beim Hover */
+    stroke: var(--secondary-font-color);
+}
+
+
+
+.icon2 {
+    width: 24px;             /* Standardgröße (Breite) des Icons */
+    height: 24px;            /* Standardgröße (Höhe) des Icons */
+    stroke: var(--primary-font-color);
+    fill: none;
+    cursor: pointer;         /* Zeiger als Cursor, geeignet für klickbare Icons */
+    transition: all 0.3s ease; /* Weiche Übergänge für alle Änderungen (Größe, Farbe etc.) */
+    margin-left: 10px;
+}
+
+
+.icon2.hover-scale:hover {
+    transform: scale(1.2);   /* Vergrößert das Icon leicht beim Hover */
+    stroke: var(--secondary-font-color);
+}
+
+
+.icon3 {
+    width: 25px;             /* Standardgröße (Breite) des Icons */
+    height: 25px;            /* Standardgröße (Höhe) des Icons */
+    stroke: var(--primary-font-color);
+    fill: none;
+    cursor: pointer;         /* Zeiger als Cursor, geeignet für klickbare Icons */
+    transition: all 0.3s ease; /* Weiche Übergänge für alle Änderungen (Größe, Farbe etc.) */
+    margin-left: 10px;
+}
+
+
+.icon3.hover-scale:hover {
+    transform: scale(1.2);   /* Vergrößert das Icon leicht beim Hover */
+    stroke: var(--secondary-font-color);
+}
+
+.icon4 {
+    width: 26px;             /* Standardgröße (Breite) des Icons */
+    height: 26px;            /* Standardgröße (Höhe) des Icons */
+    stroke: var(--primary-font-color);
+    fill: none;
+    cursor: pointer;         /* Zeiger als Cursor, geeignet für klickbare Icons */
+    transition: all 0.3s ease; /* Weiche Übergänge für alle Änderungen (Größe, Farbe etc.) */
+    margin-left: 10px;
+}
+
+
+.icon4.hover-scale:hover {
+    transform: scale(1.2);   /* Vergrößert das Icon leicht beim Hover */
+    stroke: var(--secondary-font-color);
+}
+
+
+
+
+/* Standard-Modaldialog Hintergrund */
+.modal-standard-background {
+    position: fixed;
+    z-index: 9999999 !important;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-background);
+    box-sizing: border-box;
+    pointer-events: auto;
+
+}
+
+
+/* Standard-Modaldialog */
+.modal-standard-inner {
+    z-index: 10000000 !important;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    left: 50%;
+    top: 50%;
+    width: auto;
+    max-width: 60vh;
+    height: auto;
+    max-height: 75vh;
+    transform: translate(-50%, -50%); /* Zentriert den Dialog */
+    pointer-events: auto; /* Interaktionen sind erlaubt */
+    box-sizing: border-box;
+    border: 2px solid var(--primary-border-color);
+    border-radius: var(--primary-border-radius);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Schatten für besseren Effekt */
+    overflow: hidden; /* Verhindert, dass der Inhalt den Container überschreitet */
+}
+
+
+/* Standard-Modaldialog Contentbereich */
+.modal-standard-content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    position: relative;
+    text-align: center; 
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    overflow: auto;
+    padding: 10px 0px 10px 0px;
+    max-height:50vh;
+    width: 100%;
+    color: var(--secondary-font-color);
+}
+
+
+/* Standard-Modaldialog Buttonbereich */
+.modal-standard-button-container  {
+    display: flex;
+    justify-content: center; /* Zentriert die Buttons im Dialog */
+    align-items: center;
+    gap: 10px; /* Abstand zwischen den Buttons */
+    margin-top: 0px; /* Abstand zum vorherigen Inhalt */
+    height: auto;
+    padding: 24px 30px 20px 30px;
+    background-color: var(--secondary-background-color); /* Hintergrund */
+    box-sizing: border-box;
+    border-top: 0px solid var(--tertiary-border-color);
+}
+
+
+.modal-standard-button {
+    font-family: var(--company-font-family);
+    font-size: var(--font-size-button);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-button-color);
+    color: var(--tertiary-font-color);
+    cursor: pointer;
+    min-width: 150px; /* Verhindert Umbruch und sorgt für gleichmäßige Breite */
+    text-align: center; /* Text zentriert im Button */
+}
+
+
+.modal-standard-button:hover {
+    background-color: var(--secondary-button-color);
+}
+
+
+/* verhindert, dass Felder mit autofill einen automatischen Background bekommen */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: var(--primary-background-color) !important;
+  color: var(--primary-background-color) !important;
+}
+
+
+
+#section-container {
+  padding: 0;
+  margin: 0;
+  }
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<div id="logo-header">
+    <a href="https://www.cream-collection.de" target="_blank">
+    <div id="company-logo" alt="Company Logo">
+    </div>    
+    </a>
+
+</div>
+
+
+<div id="contact-form-title-container">
+
+  <div class="contact-form-title-content">
+
+      <p class="contact-form-custom0c-p">Chat Assistant</p>
+
+  </div>
+
+</div>
+
+<div id="contact-form-section-container">
+
+<div id="contact-form-container">
+
+  <input type="text" id="contact-form-aktennummer" name="aktennummer" placeholder="Aktennummer" maxlength="500" autocomplete="name" required />
+
+  <input type="text" id="contact-form-name" name="name" placeholder="Vor- und Nachname" maxlength="500" autocomplete="name" required />
+
+  <input type="email" id="contact-form-email" name="email" placeholder="E-Mail-Adresse" maxlength="100" autocomplete="email" required />
+
+  <textarea id="contact-form-nachricht" name="Kontaktnachricht" rows="6" placeholder="Ihr Anliegen / Ihre Nachricht" maxlength="2000" required></textarea>
+
+</div>
+
+</div>
+
+
+<div id="section-container">
+
+<div id="toggle-container">
+
+
+<div id="title-container">
+
+
+    <div class="title-content">
+
+        <p class="custom0a-p">Hallo, ich bin Chati,</p>
+        <p class="custom0b-p">wenn Sie Fragen zum Thema Forderungsmanagement oder zu meinem Unternehmen haben, dann sind Sie hier genau richtig. Ich weiß aber noch viel mehr. Versuchen Sie es einfach.</p>
+        <p class="custom0c-p">Chat Assistant</p>
+
+
+    </div>
+
+    <div id="clara-image" alt="Clara Bild">
+    </div>    
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="chatbot-consent-container">
+
+    <div id="chatbot-consent">
+
+        <input type="checkbox" id="chatbot-consent-checkbox" />
+        <label for="chatbot-consent-checkbox" id="chatbot-consent-label">Ich habe die <a id="consent-link" class="special-link-consent" href="https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/" target="_blank">Nutzungsbedingungen und Datenschutzerklärung</a> gelesen, verstanden und akzeptiert.</label>
+    </div>        
+</div>
+    
+
+    
+    
+<div id="instant-answer-dialog-button-container">
+     
+    <button id="instant-answer-dialog-button" onclick="transferMessageToChatbot()">Sofortantwort erhalten</button>
+    <button id="message-send-button" onclick="openConfirmationModal()">Nachricht senden</button>
+
+
+</div>
+
+
+
+<div id="chatbot-container">
+      
+    <div id="chatbot">
+
+
+
+
+        <div id="delete-history-and-close-chatbot-background" class="modal-standard-background" aria-modal="true">
+
+
+            <div class="modal-standard-inner">
+
+
+                <div class="modal-standard-content">
+                    <p id="chat-history-deleted-and-closed" class="ccm-content p">Ihre Chat-Historie wird gelöscht und der Chatbot geschlossen.</p>
+                </div>
+
+
+                <div class="modal-standard-button-container">
+                    <button id="cancel-button" class="modal-standard-button" onclick="closeDeleteConfirmation()">Abbrechen</button>
+                    <button id="confirm-delete-button2" class="modal-standard-button" onclick="confirmDelete2()">OK</button>
+                </div>
+
+
+            </div>
+
+        </div>
+      
+
+
+
+        <div id="delete-confirmation-modal" class="modal-standard-background" aria-modal="true">
+
+            <div class="modal-standard-inner">
+
+                <div class="modal-standard-content">
+                    <p id="chat-history-deleted" class="ccm-content p">Ihre Chat-Historie wird gelöscht.</p>
+                </div>
+
+                <div class="modal-standard-button-container">
+                    <button id="cancel2-button" class="modal-standard-button" onclick="closeDeleteConfirmation()">Abbrechen</button>
+                    <button id="confirm-delete-button" class="modal-standard-button" onclick="confirmDelete()">OK</button>
+                </div>
+
+            </div>
+
+        </div>        
+
+
+
+
+        <div id="user-help-container-de" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Wir möchten Ihnen weiterhelfen. Und zwar sofort.</h2>
+                    <p class="hmd-content p">Kennen Sie das? Sie schreiben eine Nachricht über ein Kontaktformular und müssen darauf warten, dass jemand auf Ihr Anliegen antwortet.  Mit unserem Sofortantwort-Chatbot ist das anders: Hier erhalten Sie in den allermeisten Fällen direkt eine Antwort auf Ihre Fragen – ohne Wartezeit!</p>
+
+                    <h3 class="custom-h3">Funktionen des Chatbots:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Sofortantwort:</strong> Geben Sie Ihre Frage in das Textfeld ein oder übertragen Sie eine bereits verfasste Nachricht aus dem Kontaktformular. Der Chatbot gibt Ihnen sofort eine Antwort.</li>
+                        <li><strong>Sprachauswahl:</strong> Wählen Sie Ihre bevorzugte Sprache im Dropdown-Menü. Der Chatbot antwortet dann in der von Ihnen gewählten Sprache.</li>
+                        <li><strong>Chat-Historie:</strong> Ihre Konversation wird gespeichert. Über den „Historie leeren“-Button können Sie den Verlauf löschen.</li>
+                    </ul>
+
+                    <h3 class="custom-h3">Erklärung der Buttons:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Sofortantwort erhalten:</strong> Übertragen Sie Ihre Nachricht aus dem Kontaktformular in den Chatbot und erhalten Sie sofort eine Antwort.</li>
+                        <li><strong>Sofortantwort-Fenster schließen:</strong> Schließen Sie den Chatbot und kehren Sie zum Kontaktformular zurück.</li>
+                        <li><strong>Nachricht senden:</strong> Senden Sie Ihre Informationen direkt an das Support-Team.</li>
+                        <li><strong>Frage senden:</strong> Stellen Sie dem Chatbot eine individuelle Frage und erhalten Sie sofort eine Antwort.</li>
+                        <li><strong>Historie leeren:</strong> Löschen Sie den bisherigen Chatverlauf und starten Sie eine neue Konversation.</li>
+                        <li><strong>Hilfe anzeigen:</strong> Zeigt diese Hilfeseite an.</li>
+                    </ul>
+                
+                </div>
+
+                <div class="modal-standard-button-container">
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Deutsch')">OK</button>
+                </div>
+                
+            </div>
+              
+        </div>
+
+
+
+        <div id="user-help-container-en" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">We want to help you. And we want to do it immediately.</h2>
+                    <p class="hmd-content p">Do you know this situation? You send a message through a contact form and have to wait for someone to respond. With our instant response chatbot, it's different: In most cases, you will receive an answer to your questions immediately – without waiting time!</p>
+                        
+                    <h3 class="custom-h3">Chatbot Features:</h3>
+                    <ul class="hmd-content-ul">
+                       <li><strong>Instant Response:</strong> Enter your question in the text field or transfer a pre-written message from the contact form. The chatbot will respond immediately.</li>
+                        <li><strong>Language Selection:</strong> Choose your preferred language from the dropdown menu. The chatbot will then respond in the language you selected.</li>
+                        <li><strong>Chat History:</strong> Your conversation is saved. You can clear the history using the "Clear History" button.</li>
+                    </ul>
+
+                    <h3 class="custom-h3">Explanation of the Buttons:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Get Instant Response:</strong> Transfer your message from the contact form to the chatbot and get an immediate response.</li>
+                        <li><strong>Close Instant Response Window:</strong> Close the chatbot and return to the contact form.</li>
+                        <li><strong>Send Message:</strong> Send your information directly to the support team.</li>
+                        <li><strong>Send Question:</strong> Ask the chatbot an individual question and receive an instant answer.</li>
+                        <li><strong>Clear History:</strong> Delete the previous chat history and start a new conversation.</li>
+                        <li><strong>Show Help:</strong> Displays this help page.</li>
+                    </ul>
+              
+                </div>
+                
+                <div class="modal-standard-button-container">
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Englisch')">OK</button>
+                </div>
+                
+            </div>
+                    
+        </div>
+
+
+
+        <div id="user-help-container-es" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Queremos ayudarte. Y queremos hacerlo de inmediato.</h2>
+                    <p class="hmd-content p">¿Te ha pasado? Envías un mensaje a través de un formulario de contacto y tienes que esperar a que alguien responda. Con nuestro chatbot de respuesta inmediata, es diferente: en la mayoría de los casos, recibirás una respuesta a tus preguntas de inmediato, ¡sin tiempo de espera!</p>
+
+                    <h3 class="custom-h3">Funciones del chatbot:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Respuesta Inmediata:</strong> Ingresa tu pregunta en el campo de texto o transfiere un mensaje preescrito desde el formulario de contacto. El chatbot responderá de inmediato.</li>
+                        <li><strong>Selección de Idioma:</strong> Elige tu idioma preferido en el menú desplegable. El chatbot responderá en el idioma que selecciones.</li>
+                        <li><strong>Historial del Chat:</strong> Tu conversación se guarda. Puedes borrar el historial usando el botón "Borrar Historial".</li>
+                    </ul>
+
+                    <h3 class="custom-h3">Explicación de los Botones:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Obtener Respuesta Inmediata:</strong> Transfiere tu mensaje desde el formulario de contacto al chatbot y recibe una respuesta inmediata.</li>
+                        <li><strong>Cerrar Ventana de Respuesta Inmediata:</strong> Cierra el chatbot y vuelve al formulario de contacto.</li>
+                        <li><strong>Enviar Mensaje:</strong> Envía tu información directamente al equipo de soporte.</li>
+                        <li><strong>Enviar Pregunta:</strong> Haz una pregunta individual al chatbot y recibe una respuesta inmediata.</li>
+                        <li><strong>Borrar Historial:</strong> Elimina el historial de chat anterior y comienza una nueva conversación.</li>
+                        <li><strong>Mostrar Ayuda:</strong> Muestra esta página de ayuda.</li>
+                    </ul>
+                
+                </div>
+               
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Spanisch')">OK</button>
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+
+
+        <div id="user-help-container-tr" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Size yardımcı olmak istiyoruz. Hem de hemen.</h2>
+                    <p class="hmd-content p">Bu durumu biliyor musunuz? Bir iletişim formu üzerinden mesaj gönderiyorsunuz ve birinin yanıt vermesini beklemek zorunda kalıyorsunuz. Anlık yanıt veren chatbot'umuzla durum farklı: Çoğu durumda, sorularınıza hemen yanıt alırsınız – bekleme süresi olmadan!</p>
+
+                    <h3 class="custom-h3">Chatbot'un Özellikleri:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Anlık Yanıt:</strong> Sorunuzu metin alanına girin veya iletişim formunda daha önce yazılmış bir mesajı aktarın. Chatbot hemen yanıt verecektir.</li>
+                        <li><strong>Dil Seçimi:</strong> Açılır menüden tercih ettiğiniz dili seçin. Chatbot, seçtiğiniz dilde yanıt verecektir.</li>
+                        <li><strong>Sohbet Geçmişi:</strong> Konuşmanız kaydedilir. "Geçmişi Temizle" düğmesini kullanarak geçmişi temizleyebilirsiniz.</li>
+                    </ul>
+
+                    <h3 class="custom-h3">Düğmelerin Açıklaması:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Anlık Yanıt Al:</strong> İletişim formundan mesajınızı chatbota aktarın ve anında yanıt alın.</li>
+                        <li><strong>Anlık Yanıt Penceresini Kapat:</strong> Chatbot'u kapatın ve iletişim formuna geri dönün.</li>
+                        <li><strong>Mesaj Gönder:</strong> Bilgilerinizi doğrudan destek ekibine gönderin.</li>
+                        <li><strong>Soru Gönder:</strong> Chatbota bireysel bir soru sorun ve hemen yanıt alın.</li>
+                        <li><strong>Geçmişi Temizle:</strong> Önceki sohbet geçmişini silin ve yeni bir konuşma başlatın.</li>
+                        <li><strong>Yardımı Göster:</strong> Bu yardım sayfasını gösterir.</li>
+                    </ul>
+
+                </div>
+                
+                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Türkisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+        <div id="user-help-container-sa" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">نريد مساعدتك. وبشكل فوري.</h2>
+                    <p class="hmd-content p">هل تعرف هذا الموقف؟ ترسل رسالة عبر نموذج الاتصال وتضطر إلى الانتظار حتى يرد شخص ما. مع روبوت المحادثة الخاص بنا، الأمر مختلف: في معظم الحالات، ستحصل على إجابة على أسئلتك على الفور - دون وقت انتظار!</p>
+
+                    <h3 class="custom-h3">ميزات روبوت المحادثة:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>الرد الفوري:</strong> أدخل سؤالك في حقل النص أو انقل رسالة مكتوبة مسبقًا من نموذج الاتصال. سيرد الروبوت على الفور.</li>
+                        <li><strong>اختيار اللغة:</strong> اختر لغتك المفضلة من القائمة المنسدلة. سيرد الروبوت باللغة التي اخترتها.</li>
+                        <li><strong>سجل المحادثة:</strong> سيتم حفظ محادثتك. يمكنك مسح السجل باستخدام زر "مسح السجل".</li>
+                    </ul>
+
+                    <h3 class="custom-h3">شرح الأزرار:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>الحصول على رد فوري:</strong> انقل رسالتك من نموذج الاتصال إلى الروبوت واحصل على رد فوري.</li>
+                        <li><strong>إغلاق نافذة الرد الفوري:</strong> أغلق الروبوت وارجع إلى نموذج الاتصال.</li>
+                        <li><strong>إرسال الرسالة:</strong> أرسل معلوماتك مباشرة إلى فريق الدعم.</li>
+                        <li><strong>إرسال سؤال:</strong> اطرح سؤالاً فرديًا على الروبوت واحصل على إجابة فورية.</li>
+                        <li><strong>مسح السجل:</strong> امسح سجل المحادثة السابق وابدأ محادثة جديدة.</li>
+                        <li><strong>عرض المساعدة:</strong> يعرض صفحة المساعدة هذه.</li>
+                    </ul>
+                
+                </div>
+                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Arabisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+
+
+        <div id="user-help-container-ru" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Мы хотим помочь вам. Причем немедленно.</h2>
+                    <p class="hmd-content p">Знакома ли вам эта ситуация? Вы отправляете сообщение через контактную форму и вынуждены ждать ответа. С нашим чат-ботом с мгновенным ответом все по-другому: в большинстве случаев вы получите ответ на свои вопросы сразу — без ожидания!</p>
+
+                    <h3 class="custom-h3">Функции чат-бота:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Мгновенный ответ:</strong> Введите свой вопрос в текстовое поле или перенесите заранее написанное сообщение из контактной формы. Чат-бот ответит вам немедленно.</li>
+                        <li><strong>Выбор языка:</strong> Выберите предпочитаемый язык из выпадающего меню. Чат-бот ответит на выбранном вами языке.</li>
+                        <li><strong>История чата:</strong> Ваша беседа сохраняется. Вы можете очистить историю с помощью кнопки "Очистить историю".</li>
+                    </ul>
+
+                    <h3 class="custom-h3">Объяснение кнопок:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Получить мгновенный ответ:</strong> Перенесите свое сообщение из контактной формы в чат-бот и получите мгновенный ответ.</li>
+                        <li><strong>Закрыть окно мгновенного ответа:</strong> Закройте чат-бот и вернитесь к контактной форме.</li>
+                        <li><strong>Отправить сообщение:</strong> Отправьте свою информацию непосредственно в службу поддержки.</li>
+                        <li><strong>Задать вопрос:</strong> Задайте индивидуальный вопрос чат-боту и получите немедленный ответ.</li>
+                        <li><strong>Очистить историю:</strong> Удалите предыдущую историю чатов и начните новый разговор.</li>
+                        <li><strong>Показать помощь:</strong> Открывает эту страницу с помощью.</li>
+                    </ul>
+                
+                </div>
+                                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Russisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+        <div id="user-help-container-pl" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Chcemy Ci pomóc. I to natychmiast.</h2>
+                    <p class="hmd-content p">Czy znasz tę sytuację? Wysyłasz wiadomość przez formularz kontaktowy i musisz czekać na odpowiedź. Z naszym chatbotem, który odpowiada natychmiast, jest inaczej: w większości przypadków otrzymasz odpowiedź na swoje pytania od razu – bez czekania!</p>
+
+                    <h3 class="custom-h3">Funkcje chatbota:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Odpowiedź natychmiastowa:</strong> Wpisz swoje pytanie w pole tekstowe lub prześlij wcześniej napisany komunikat z formularza kontaktowego. Chatbot odpowie od razu.</li>
+                        <li><strong>Wybór języka:</strong> Wybierz preferowany język z menu rozwijanego. Chatbot odpowie w wybranym przez Ciebie języku.</li>
+                        <li><strong>Historia czatu:</strong> Twoja rozmowa zostanie zapisana. Możesz wyczyścić historię za pomocą przycisku „Wyczyść historię”.</li>
+                    </ul>
+
+                    <h3 class="custom-h3">Wyjaśnienie przycisków:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Uzyskaj odpowiedź natychmiastową:</strong> Przenieś wiadomość z formularza kontaktowego do chatbota i uzyskaj odpowiedź natychmiast.</li>
+                        <li><strong>Zamknij okno odpowiedzi natychmiastowej:</strong> Zamknij chatbota i wróć do formularza kontaktowego.</li>
+                        <li><strong>Wyślij wiadomość:</strong> Wyślij swoje informacje bezpośrednio do zespołu wsparcia.</li>
+                        <li><strong>Wyślij pytanie:</strong> Zadaj chatbotowi indywidualne pytanie i otrzymaj natychmiastową odpowiedź.</li>
+                        <li><strong>Wyczyść historię:</strong> Usuń wcześniejszą historię czatu i rozpocznij nową rozmowę.</li>
+                        <li><strong>Pokaż pomoc:</strong> Wyświetla tę stronę pomocy.</li>
+                    </ul>
+                
+                </div>
+                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Polnisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+ 
+        <div id="user-help-container-ro" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Vrem să te ajutăm. Și vrem să o facem imediat.</h2>
+                    <p class="hmd-content p">Îți este cunoscută această situație? Trimiți un mesaj printr-un formular de contact și trebuie să aștepți ca cineva să răspundă. Cu chatbot-ul nostru de răspuns instantaneu, este diferit: în cele mai multe cazuri, vei primi un răspuns la întrebările tale imediat, fără timp de așteptare!</p>
+                        
+                    <h3 class="custom-h3">Funcțiile chatbot-ului:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Răspuns instantaneu:</strong> Introduceți întrebarea în câmpul de text sau transferați un mesaj pre-scris din formularul de contact. Chatbot-ul va răspunde imediat.</li>
+                        <li><strong>Selectarea limbii:</strong> Alegeți limba preferată din meniul derulant. Chatbot-ul va răspunde în limba selectată.</li>
+                        <li><strong>Istoricul conversațiilor:</strong> Conversația ta va fi salvată. Puteți șterge istoricul folosind butonul „Ștergeți istoricul”.</li>
+                    </ul>
+                        
+                    <h3 class="custom-h3">Explicația butoanelor:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Obțineți un răspuns instantaneu:</strong> Transferați mesajul dvs. din formularul de contact în chatbot și primiți un răspuns imediat.</li>
+                        <li><strong>Închideți fereastra de răspuns instantaneu:</strong> Închideți chatbot-ul și reveniți la formularul de contact.</li>
+                        <li><strong>Trimiteți mesajul:</strong> Trimiteți informațiile dvs. direct echipei de suport.</li>
+                        <li><strong>Trimiteți întrebarea:</strong> Puneți o întrebare chatbot-ului și primiți un răspuns imediat.</li>
+                        <li><strong>Ștergeți istoricul:</strong> Ștergeți istoricul conversațiilor și începeți o conversație nouă.</li>
+                        <li><strong>Afișați ajutorul:</strong> Afișează această pagină de ajutor.</li>
+                    </ul>
+                
+                </div>
+                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Rumänisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+
+
+        <div id="user-help-container-gr" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Θέλουμε να σας βοηθήσουμε. Και μάλιστα αμέσως.</h2>
+                    <p class="hmd-content p">Σας είναι γνωστή αυτή η κατάσταση; Στέλνετε ένα μήνυμα μέσω μιας φόρμας επικοινωνίας και πρέπει να περιμένετε για να λάβετε απάντηση. Με το chatbot άμεσης απάντησης μας, τα πράγματα είναι διαφορετικά: Στις περισσότερες περιπτώσεις, θα λάβετε απάντηση στις ερωτήσεις σας αμέσως – χωρίς χρόνο αναμονής!</p>
+
+                    <h3 class="custom-h3">Λειτουργίες του Chatbot:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Άμεση απάντηση:</strong> Εισαγάγετε την ερώτησή σας στο πεδίο κειμένου ή μεταφέρετε ένα προετοιμασμένο μήνυμα από τη φόρμα επικοινωνίας. Το chatbot θα απαντήσει αμέσως.</li>
+                        <li><strong>Επιλογή γλώσσας:</strong> Επιλέξτε την προτιμώμενη γλώσσα από το αναπτυσσόμενο μενού. Το chatbot θα απαντήσει στη γλώσσα που επιλέξατε.</li>
+                        <li><strong>Ιστορικό συνομιλιών:</strong> Η συνομιλία σας αποθηκεύεται. Μπορείτε να διαγράψετε το ιστορικό χρησιμοποιώντας το κουμπί "Διαγραφή ιστορικού".</li>
+                    </ul>
+                        
+                    <h3 class="custom-h3">Επεξήγηση των κουμπιών:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Λήψη άμεσης απάντησης:</strong> Μεταφέρετε το μήνυμά σας από τη φόρμα επικοινωνίας στο chatbot και λάβετε άμεση απάντηση.</li>
+                        <li><strong>Κλείσιμο παραθύρου άμεσης απάντησης:</strong> Κλείστε το chatbot και επιστρέψτε στη φόρμα επικοινωνίας.</li>
+                        <li><strong>Αποστολή μηνύματος:</strong> Στείλτε τις πληροφορίες σας απευθείας στην ομάδα υποστήριξης.</li>
+                        <li><strong>Υποβολή ερώτησης:</strong> Κάντε μια ερώτηση στο chatbot και λάβετε άμεση απάντηση.</li>
+                        <li><strong>Διαγραφή ιστορικού:</strong> Διαγράψτε το προηγούμενο ιστορικό συνομιλιών και ξεκινήστε μια νέα συνομιλία.</li>
+                        <li><strong>Εμφάνιση βοήθειας:</strong> Εμφανίζει αυτήν τη σελίδα βοήθειας.</li>
+                    </ul>
+                
+                </div>
+                                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Griechisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+        <div id="user-help-container-it" class="send-confirmation" aria-modal="true" style="display:none">
+
+            <div class="hmd-dialog">
+                
+                <div class="hmd-content">
+                
+                    <h2 class="custom-h2">Vogliamo aiutarti. E lo faremo immediatamente.</h2>
+                    <p class="hmd-content p">Conosci questa situazione? Invi un messaggio tramite un modulo di contatto e devi aspettare che qualcuno risponda. Con il nostro chatbot di risposta immediata, è diverso: nella maggior parte dei casi, riceverai una risposta alle tue domande immediatamente, senza tempi di attesa!</p>
+                        
+                    <h3 class="custom-h3">Funzioni del chatbot:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Risposta immediata:</strong> Inserisci la tua domanda nel campo di testo o trasferisci un messaggio già scritto dal modulo di contatto. Il chatbot risponderà immediatamente.</li>
+                        <li><strong>Selezione della lingua:</strong> Scegli la tua lingua preferita dal menu a tendina. Il chatbot risponderà nella lingua selezionata.</li>
+                        <li><strong>Cronologia della chat:</strong> La tua conversazione verrà salvata. Puoi cancellare la cronologia utilizzando il pulsante "Cancella cronologia".</li>
+                    </ul>
+                        
+                    <h3 class="custom-h3">Spiegazione dei pulsanti:</h3>
+                    <ul class="hmd-content-ul">
+                        <li><strong>Ottieni risposta immediata:</strong> Trasferisci il tuo messaggio dal modulo di contatto al chatbot e ricevi una risposta immediata.</li>
+                        <li><strong>Chiudi la finestra di risposta immediata:</strong> Chiudi il chatbot e torna al modulo di contatto.</li>
+                        <li><strong>Invia messaggio:</strong> Invia le tue informazioni direttamente al team di supporto.</li>
+                        <li><strong>Invia domanda:</strong> Fai una domanda individuale al chatbot e ricevi una risposta immediata.</li>
+                        <li><strong>Cancella cronologia:</strong> Elimina la cronologia della chat precedente e avvia una nuova conversazione.</li>
+                        <li><strong>Mostra aiuto:</strong> Mostra questa pagina di aiuto.</li>
+                    </ul>
+                
+                </div>
+                                
+                <div class="modal-standard-button-container">
+
+                    <button id="confirm3button" class="modal-standard-button" onclick="closeHelpModal('Italienisch')">OK</button>
+
+                </div>
+                
+            </div>
+                
+        </div>
+
+
+
+
+
+
+        <div id="chatbot-header">
+
+          <div id="chatbot-language">
+
+            <span id="selected-flag" class="flag-icon flag-icon-de" style="position:absolute;left:0px;top:50%;transform:translateY(-50%)"></span>
+            <select id="language-dropdown" onchange="updateFlagAndSendMessage()">
+              <option value="Deutsch" data-flag="flag-icon-de">Deutsch...</option>
+              <option value="Englisch" data-flag="flag-icon-gb">English</option>
+              <option value="Spanisch" data-flag="flag-icon-es">Español</option>
+              <option value="Türkisch" data-flag="flag-icon-tr">Türkçe</option>
+              <option value="Arabisch" data-flag="flag-icon-sa">العربية</option>
+              <option value="Russisch" data-flag="flag-icon-ru">Русский</option>
+              <option value="Polnisch" data-flag="flag-icon-pl">Polski</option>
+              <option value="Rumänisch" data-flag="flag-icon-ro">Română</option>
+              <option value="Griechisch" data-flag="flag-icon-gr">Ελληνικά</option>
+              <option value="Italienisch" data-flag="flag-icon-it">Italiano</option>
+            </select>
+                        
+          </div>
+
+          <div id="chatbot-themes">
+
+            <select id="theme" onchange="handleThemeChange()">
+              <option value disabled selected>Themen:</option>
+              <option value="Bitte zeige mir eine aktuelle Forderungsaufstellung an. Beachte die Formatierungsanweisungen.">Forderungsaufstellung</option>
+              <option value="Bitte erkläre mir den Grund der Forderung. Wer ist der Gläubiger und was habe ich genutzt?">Forderungsgrund</option>
+              <option value="Bitte zeige mir meine eingegangenen bzw. verbuchten Zahlungen an.">Zahlungseingang</option>
+              <option value="Ich möchte eine Ratenzahlung beantragen.">Ratenzahlung</option>
+              <option value="Ich bin sicher, die Leistung nicht genutzt bzw. den Kauf getätigt zu haben. Was muss ich tun?">Widerspruch</option>
+              <option value="Wer oder was ist cream collection?">Über cream collection</option>
+            </select>
+
+          </div>
+
+          <div id="chatbot-icons">
+
+            <svg class="icon3 hover-scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" title="Hilfe" onclick="showHelpModal()">  
+            <title>Hilfe</title>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z">
+            </path>
+            </svg>
+
+            <svg class="icon2 hover-scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" title="Chat-Historie löschen" onclick="openDeleteConfirmation()"> 
+            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0">
+            <title>Chat-Historie löschen</title>
+            </path>
+            </svg>
+
+            <svg class="icon4 hover-scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" title="Chat-Historie löschen und Chatbot schließen" onclick="openDeleteConfirmation2()">  
+            <title>Chat-Historie löschen und Chatbot schließen</title>
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+            </path>
+            </svg>
+                    
+          </div>
+
+        </div>
+
+
+
+
+        <div id="chatbot-messages">
+            
+            <div id="loader-container">
+            
+                <div id="loader">
+            
+                </div>
+
+                <div id="loader-text">Einen kurzen Augenblick bitte. Ihre Anfrage wird bearbeitet.
+        
+                </div>
+            
+            </div>
+
+            
+
+            <div id="chatbot-messages-gpt">
+
+            </div>
+        </div>
+
+
+
+        <div id="chatbot-input-container">
+
+            <div id="chatbot-input-inner-container">
+
+                <div id="input-left"> 
+                <textarea id="chatbot-input" placeholder="Wie kann ich Ihnen helfen?" maxlength="2000"></textarea>
+                </div>
+                <div id="input-right"> 
+
+                    <button id="input-right" aria-label="Frage an Chatbot senden" style="background:none;border:none;cursor:pointer;height:45px;width:45px" onclick="sendMessage()">
+                    <svg class="icon hover-scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" title="Frage an Chatbot senden">  
+                    <title>Frage an Chatbot senden</title>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5">
+                    </path>
+                    </svg>
+                    </button>
+               </div>
+
+            </div>
+
+
+            <div id="chatbot-input-modal">
+
+                <textarea id="expanded-chatbot-input" placeholder="Wie kann ich Ihnen helfen? Geben Sie hier Ihre Frage ein." maxlength="2000"></textarea>
+                <button id="micButton">MIC</button>
+                <button id="modal-ok-button" onclick="closeModal()">OK</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div id="input-button-container">
+
+        <button id="everythingOK" class="okAndnotOK-Button" onclick="openDeleteConfirmation3()">Alle Fragen beantwortet</button>
+        <button id="notOK" class="okAndnotOK-Button" onclick="openConfirmationModal()">Nachricht senden</button>
+
+    </div>
+
+
+    <div id="back-to-outlook-container">
+
+        <button id="outlook-button" class="okAndnotOK-Button" onclick="forwardBotMessage()">Letzte Chatbot-Antwort an Outlook übertragen</button>
+
+    </div>
+
+
+
+
+    <div id="delete-confirmation-modal3" class="modal-standard-background" aria-modal="true">
+
+        <div class="modal-standard-inner">
+
+            <div class="modal-standard-content">
+                <p id="resetPageText1" class="ccm-content p">Wir freuen uns, dass wir Ihnen mit diesem Service helfen konnten.</p>
+                <p id="resetPageText2" class="ccm-content p">Ihre Chat-Historie wird gelöscht und die Nachricht verworfen.</p>
+            </div>
+
+            <div class="modal-standard-button-container">
+                <button id="cancel-button3" class="modal-standard-button" onclick="closeDeleteConfirmation()">Abbrechen</button>
+                <button id="confirm-delete-button3" class="modal-standard-button" onclick="resetPage()">OK</button>
+            </div>
+
+        </div>
+
+    </div>        
+
+</div>
+
+
+
+
+<div id="confirmModal" class="send-confirmation" aria-modal="true" style="display:none">
+
+    <div class="send-confirmation-dialog">
+
+        <div class="send-confirmation-content">
+
+            <h2 class="custom2-h2">Die folgende Nachricht wird gesendet.</h2>
+            <p><strong>an:</strong></p>
+            <p><span id="recipientName"></span></p>
+            <p><span id="recipientEmail"></span></p>
+            <p> </p>
+            <p><strong>Ihr Name:</strong></p>
+            <p><span id="modalName"></span></p>
+            <p><strong>Ihre E-Mail-Adresse:</strong></p>
+            <p><span id="modalEmail"></span></p>
+            <p><strong>Ihre Nachricht:</strong></p>
+            <textarea id="modalMessage" class="email-nachricht" style="white-space:pre-wrap" name="Nachricht" rows="4" placeholder="Ihr Anliegen / Ihre Nachricht" maxlength="2000"></textarea>
+            <p> </p>
+            <p><strong>Übersetzte Chat-Historie:</strong></p>
+            <div id="translated-chat-history" style="white-space:pre-wrap">
+            </div>
+        </div>
+
+        <div id="send-confirmation-button-container" class="modal-standard-button-container">
+            <button id="cancelSend" class="modal-standard-button">Abbrechen</button>
+            <button id="confirmSend" class="modal-standard-button">Senden</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div id="confirm2Modal" class="send-confirmation" aria-modal="true" style="display:none">
+
+    <div class="send-confirmation-dialog">
+
+        <div class="send-confirmation-content">
+
+            <h2 class="custom3-h2">Ihre Nachricht wurde erfolgreich gesendet!</h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+	
+<div id="footer">
+
+</div>
+
+
+
+	
+
+
+<script>
+
+    // Überwache das Kontrollkästchen und aktiviere/deaktiviere das - copyright cream5collection Stephan Vila - Eingabefeld und die Buttons je nach Zustand
+    document.getElementById('chatbot-consent-checkbox').addEventListener('change', function() {
+      const consentGiven = this.checked;
+      document.getElementById('chatbot-input').disabled = !consentGiven;
+      document.getElementById('chatbot-send-button').disabled = !consentGiven;
+      document.getElementById('chatbot-clear-button').disabled = !consentGiven;
+
+
+
+    });
+
+    let conversationHistory = [];  // Speichert den Verlauf der Konversation
+
+let isWaitingForResponse = false;  // Überwacht, ob auf eine Antwort gewartet wird
+let alreadyProcessedChunks = new Set(); // Set zum Speichern von verarbeiteten Chunk-IDs
+let hasLoggedDisplayData = false; // Neue Variable, um zu überprüfen, ob bereits geloggt wurde
+let currentUserMessageElement = null; // Speichert das Element der letzten Benutzerfrage
+let recognition;  // Globale Definition von recognition
+let isRecognizing = false;  // Zustand der Spracherkennung
+let recognitionStarted = false;  // Variable zum Überwachen, ob die Spracherkennung bereits gestartet wurde
+let chatbotHistory = [];  // Speichert den gesamten Chatverlauf
+let preventUserMessageDeletion = false; // Variable, um zu verfolgen, ob die Schlüsselwort-Bedingung erfüllt wurde
+
+
+// Event Listener für die Enter-Taste im Eingabefeld
+document.getElementById('chatbot-input').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    sendMessage();
+  }
+});
+
+
+
+
+
+// Übersetzungen für verschiedene Sprachen
+
+const textTranslations = {
+
+ "Deutsch": {
+        "greeting": "aktuell nicht in Benutzung",
+        "intro": "aktuell nicht in Benutzung",
+        "consentText": "Ich habe die <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>Nutzungsbedingungen und Datenschutzerklärung</a> gelesen, verstanden und akzeptiert.",
+        "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+        "commonQuestions": "aktuell nicht in Benutzung",
+        "selectQuestion": "Thema",
+        "sendButton": "Frage senden",
+        "clearButton": "Historie leeren",
+        "messageButton": "Nachricht senden",
+        "message2Button": "Nachricht senden",
+        "helpButton": "Hilfe anzeigen",
+        "SofortantwortOpenButton": "Sofortantwort erhalten",
+        "SofortantwortCloseButton": "Sofortantwort-Fenster schließen",
+        "cancelButton": "Abbrechen",
+        "cancel2Button": "Abbrechen",
+        "confirmButton": "OK",
+        "confirm2Button": "OK",
+        "confirm3Button": "OK",
+        "confirm4Button": "OK",
+        "everythingOK": "Alle Fragen beantwortet",
+        "notOK": "Nachricht senden",
+        "resetPageText1": "Wir freuen uns, dass wir Ihnen mit diesem Service helfen konnten.",
+        "resetPageText2": "Ihre Chat-Historie wird gelöscht und die Nachricht verworfen.",
+        "inputPlaceholder": "Wie kann ich Ihnen helfen?",
+        "loader-text": "Einen kurzen Augenblick bitte. Ihre Anfrage wird bearbeitet.",
+        "chatHistoryDeleted": "Ihre Chat-Historie wird gelöscht.",
+        "chatHistoryDeletedAndClosed": "Ihre Chat-Historie wird gelöscht und der Chatbot geschlossen.",
+        "suggestedQuestions": [
+            "aktuell nicht in Benutzung",
+            "aktuell nicht in Benutzung",
+            "aktuell nicht in Benutzung",
+            "aktuell nicht in Benutzung",
+            "aktuell nicht in Benutzung",
+            "aktuell nicht in Benutzung",
+        ],   
+        "themes": [
+            "Forderungsaufstellung",
+            "Forderungsgrund",
+            "Zahlungseingang",
+            "Ratenzahlung",
+            "Widerspruch",
+            "Über cream collection"    
+        ],
+    },
+
+
+
+    "Englisch": {
+        "greeting": "currently not in use",
+        "intro": "currently not in use",
+        "consentText": "I have read, understood, and accepted the <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>terms of use and privacy policy</a>.",
+        "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+        "commonQuestions": "currently not in use",
+        "selectQuestion": "Theme",
+        "sendButton": "Send Question",
+        "clearButton": "Clear History",
+        "messageButton": "Send Message",
+        "message2Button": "Send Message",
+        "helpButton": "Show Help",
+        "SofortantwortOpenButton": "Get Instant Response",
+        "SofortantwortCloseButton": "Close Instant Response Window",
+        "cancelButton": "Cancel",
+        "cancel2Button": "Cancel",
+        "confirmButton": "OK",
+        "confirm2Button": "OK",
+        "confirm3Button": "OK",
+        "confirm4Button": "OK",
+        "everythingOK": "All questions answered",
+        "notOK": "Send message",
+        "resetPageText1": "We are glad that we could assist you with this service.",
+        "resetPageText2": "Your chat history will be deleted and the message discarded.",
+        "inputPlaceholder": "How can I help you?",
+        "loader-text": "Please wait a moment. Your request is being processed.",
+        "chatHistoryDeleted": "Your chat history will be deleted.",
+        "chatHistoryDeletedAndClosed": "Your chat history will be deleted and the chatbot will be closed.",
+        "suggestedQuestions": [
+            "currently not in use",
+            "currently not in use",
+            "currently not in use",
+            "currently not in use",
+            "currently not in use",
+            "currently not in use"
+        ],   
+        "themes": [
+            "Statement of claims", 
+            "Reason for claim", 
+            "Incoming payment", 
+            "Installment payment", 
+            "Objection", 
+            "About cream collection"
+        ],
+
+    },
+
+
+    "Spanisch": {
+        "greeting": "No está en uso.",
+        "intro": "No está en uso.",
+        "consentText": "He leído, comprendido y aceptado los <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>términos de uso y la política de privacidad</a>.",
+        "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+        "commonQuestions": "No está en uso.",
+        "selectQuestion": "Tema",
+        "sendButton": "Enviar Pregunta",
+        "clearButton": "Borrar Historial",
+        "messageButton": "Enviar Mensaje",
+        "message2Button": "Enviar Mensaje",
+        "helpButton": "Mostrar Ayuda",
+        "SofortantwortOpenButton": "Obtener Respuesta Inmediata",
+        "SofortantwortCloseButton": "Cerrar Ventana de Respuesta Inmediata",
+        "cancelButton": "Cancelar",
+        "cancel2Button": "Cancelar",
+        "confirmButton": "OK",
+        "confirm2Button": "OK",
+        "confirm3Button": "OK",
+        "confirm4Button": "OK",
+        "everythingOK": "¡Todas las preguntas respondidas",
+        "notOK": "Enviar mensaje",
+        "resetPageText1": "Nos alegra haber podido ayudarle con este servicio.",
+        "resetPageText2": "Su historial de chat será eliminado y el mensaje descartado.",
+        "inputPlaceholder": "¿Cómo puedo ayudarte?",
+        "loader-text": "Por favor, espera un momento. Estamos procesando tu solicitud.",
+        "chatHistoryDeleted": "Su historial de chat será eliminado.",
+        "chatHistoryDeletedAndClosed": "Su historial de chat será eliminado y el chatbot se cerrará.",
+        "suggestedQuestions": [
+            "No está en uso.",
+            "No está en uso.",
+            "No está en uso.",
+            "No está en uso.",
+            "No está en uso.",
+            "No está en uso."
+        ],   
+        "themes": [
+            "Declaración de reclamaciones",
+            "Razón de la reclamación",
+            "Pago recibido",
+            "Pago a plazos",
+            "Objeción",
+            "Acerca de cream collection"
+        ],
+
+     },
+
+
+"Türkisch": {
+    "greeting": "şu anda kullanılmıyor",
+    "intro": "şu anda kullanılmıyor",
+    "consentText": "<a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>Kullanım Koşulları ve Gizlilik Politikasını</a> okudum, anladım ve kabul ettim.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "şu anda kullanılmıyor",
+    "selectQuestion": "Konu",
+    "sendButton": "Soru Gönder",
+    "clearButton": "Geçmişi Temizle",
+    "messageButton": "Mesaj Gönder",
+    "message2Button": "Mesaj Gönder",
+    "helpButton": "Yardımı Göster",
+    "SofortantwortOpenButton": "Anında Yanıt Al",
+    "SofortantwortCloseButton": "Anında Yanıt Penceresini Kapat",
+    "cancelButton": "İptal",
+    "cancel2Button": "İptal",
+    "confirmButton": "Tamam",
+    "confirm2Button": "Tamam",
+    "confirm3Button": "Tamam",
+    "confirm4Button": "Tamam",
+    "everythingOK": "Tüm sorular yanıtlandı",
+    "notOK": "Mesaj gönder",
+    "resetPageText1": "Bu hizmetle size yardımcı olabildiğimiz için mutluyuz.",
+    "resetPageText2": "Sohbet geçmişiniz silinecek ve mesaj iptal edilecektir.",
+    "inputPlaceholder": "Size nasıl yardımcı olabilirim?",
+    "loader-text": "Lütfen bir an bekleyin. Talebiniz işleniyor.",
+    "chatHistoryDeleted": "Sohbet geçmişiniz silinecek.",
+    "chatHistoryDeletedAndClosed": "Sohbet geçmişiniz silinecek ve chatbot kapatılacak.",
+    "suggestedQuestions": [
+        "şu anda kullanılmıyor",
+        "şu anda kullanılmıyor",
+        "şu anda kullanılmıyor",
+        "şu anda kullanılmıyor",
+        "şu anda kullanılmıyor",
+        "şu anda kullanılmıyor"
+    ],
+    "themes": [
+    "Alacak beyannamesi",
+        "Alacak nedeni",
+        "Gelen ödeme",
+        "Taksitli ödeme",
+        "İtiraz",
+        "cream collection hakkında"
+    ]
+},
+
+
+"Arabisch": {
+    "greeting": "غير مستخدم حاليًا",
+    "intro": "غير مستخدم حاليًا",
+    "consentText": "لقد قرأت وفهمت ووافقت على <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>شروط الاستخدام وسياسة الخصوصية</a>.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "غير مستخدم حاليًا",
+    "selectQuestion": "موضوع",
+    "sendButton": "إرسال السؤال",
+    "clearButton": "مسح المحفوظات",
+    "messageButton": "إرسال رسالة",
+    "message2Button": "إرسال رسالة",
+    "helpButton": "إظهار المساعدة",
+    "SofortantwortOpenButton": "الحصول على رد فوري",
+    "SofortantwortCloseButton": "إغلاق نافذة الرد الفوري",
+    "cancelButton": "إلغاء",
+    "cancel2Button": "إلغاء",
+    "confirmButton": "موافق",
+    "confirm2Button": "موافق",
+   "confirm3Button": "موافق",
+   "confirm4Button": "موافق",
+  "everythingOK": "تمت الإجابة على جميع الأسئلة",
+    "notOK": "إرسال الرسالة",
+    "resetPageText1": "نحن سعداء لأننا تمكنا من مساعدتك بهذه الخدمة.",
+    "resetPageText2": "سيتم حذف سجل المحادثة الخاص بك وسيتم تجاهل الرسالة.",    
+    "inputPlaceholder": "كيف يمكنني مساعدتكم؟",
+    "loader-text": "يرجى الانتظار لحظة. يتم معالجة طلبك.",
+    "chatHistoryDeleted": "سيتم حذف سجل المحادثة الخاص بك.",
+    "chatHistoryDeletedAndClosed": "سيتم حذف سجل المحادثة الخاص بك وسيتم إغلاق الروبوت.",
+    "suggestedQuestions": [
+        "غير مستخدم حاليًا",
+        "غير مستخدم حاليًا",
+        "غير مستخدم حاليًا",
+        "غير مستخدم حاليًا",
+        "غير مستخدم حاليًا",
+        "غير مستخدم حاليًا"
+    ],
+    "themes": [
+        "بيان المطالبات",
+        "سبب المطالبة",
+        "الدفعة الواردة",
+        "دفع بالتقسيط",
+        "اعتراض",
+        "حول cream collection"
+    ]
+},
+
+
+
+"Russisch": {
+    "greeting": "в настоящее время не используется",
+    "intro": "в настоящее время не используется",
+    "consentText": "Я прочитал, понял и согласен с <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>условиями использования и политикой конфиденциальности</a>.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "в настоящее время не используется",
+    "selectQuestion": "Тема",
+    "sendButton": "Отправить вопрос",
+    "clearButton": "Очистить историю",
+    "messageButton": "Отправить сообщение",
+    "message2Button": "Отправить сообщение",
+    "helpButton": "Показать помощь",
+    "SofortantwortOpenButton": "Получить мгновенный ответ",
+    "SofortantwortCloseButton": "Закрыть окно мгновенного ответа",
+    "cancelButton": "Отмена",
+    "cancel2Button": "Отмена",
+    "confirmButton": "ОК",
+    "confirm2Button": "ОК",
+    "confirm3Button": "OK",
+    "confirm4Button": "OK",
+    "everythingOK": "Все вопросы отвечены",
+    "notOK": "Отправить сообщение",
+    "resetPageText1": "Мы рады, что смогли помочь вам с этой услугой.",
+    "resetPageText2": "История чата будет удалена, а сообщение отменено.",
+    "inputPlaceholder": "Чем я могу вам помочь?",
+    "loader-text": "Пожалуйста, подождите немного. Ваш запрос обрабатывается.",
+    "chatHistoryDeleted": "История вашего чата будет удалена.",
+    "chatHistoryDeletedAndClosed": "История вашего чата будет удалена, и чат-бот будет закрыт.",
+    "suggestedQuestions": [
+        "в настоящее время не используется",
+        "в настоящее время не используется",
+        "в настоящее время не используется",
+        "в настоящее время не используется",
+        "в настоящее время не используется",
+        "в настоящее время не используется"
+    ],
+    "themes": [
+    "Заявление о требованиях",
+        "Основание для требования",
+        "Входящий платеж",
+        "Оплата в рассрочку",
+        "Возражение",
+        "О компании cream collection"
+    ]
+},
+
+
+
+
+"Polnisch": {
+    "greeting": "obecnie nieużywane",
+    "intro": "obecnie nieużywane",
+    "consentText": "Przeczytałem, zrozumiałem i zaakceptowałem <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>warunki użytkowania i politykę prywatności</a>.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "obecnie nieużywane",
+    "selectQuestion": "Temat",
+    "sendButton": "Wyślij pytanie",
+    "clearButton": "Wyczyść historię",
+    "messageButton": "Wyślij wiadomość",
+    "message2Button": "Wyślij wiadomość",
+    "helpButton": "Pokaż pomoc",
+    "SofortantwortOpenButton": "Uzyskaj natychmiastową odpowiedź",
+    "SofortantwortCloseButton": "Zamknij okno natychmiastowej odpowiedzi",
+    "cancelButton": "Anuluj",
+    "cancel2Button": "Anuluj",
+    "confirmButton": "OK",
+    "confirm2Button": "OK",
+    "confirm3Button": "OK",
+    "confirm4Button": "OK",
+    "everythingOK": "Wszystkie pytania zostały odpowiedziane",
+    "notOK": "Wyślij wiadomość",
+    "resetPageText1": "Cieszymy się, że mogliśmy pomóc Ci w tej usłudze.",
+    "resetPageText2": "Historia czatu zostanie usunięta, a wiadomość odrzucona.",
+    "inputPlaceholder": "Jak mogę ci pomóc?",
+    "loader-text": "Proszę czekać chwilę. Twoje zapytanie jest przetwarzane.",
+    "chatHistoryDeleted": "Twoja historia czatu zostanie usunięta.",
+    "chatHistoryDeletedAndClosed": "Twoja historia czatu zostanie usunięta, a chatbot zostanie zamknięty.",
+    "suggestedQuestions": [
+        "obecnie nieużywane",
+        "obecnie nieużywane",
+        "obecnie nieużywane",
+        "obecnie nieużywane",
+        "obecnie nieużywane",
+        "obecnie nieużywane"
+    ],
+    "themes": [
+    "Oświadczenie o roszczeniach",
+        "Podstawa roszczenia",
+        "Wpływ płatności",
+        "Płatność ratalna",
+        "Sprzeciw",
+        "O cream collection"
+    ]
+},
+
+
+
+
+"Rumänisch": {
+    "greeting": "în prezent nu este utilizat",
+    "intro": "în prezent nu este utilizat",
+    "consentText": "Am citit, înțeles și acceptat <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>termenii și condițiile de utilizare și politica de confidențialitate</a>.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "în prezent nu este utilizat",
+    "selectQuestion": "Temă",
+    "sendButton": "Trimiteți întrebare",
+    "clearButton": "Ștergeți istoricul",
+    "messageButton": "Trimiteți mesaj",
+    "message2Button": "Trimiteți mesaj",
+    "helpButton": "Afișați ajutor",
+    "SofortantwortOpenButton": "Obțineți răspuns instantaneu",
+    "SofortantwortCloseButton": "Închideți fereastra de răspuns instantaneu",
+    "cancelButton": "Anulați",
+    "cancel2Button": "Anulați",
+    "confirmButton": "OK",
+    "confirm2Button": "OK",
+    "confirm3Button": "OK",
+    "confirm4Button": "OK",
+    "everythingOK": "Toate întrebările au fost răspunse",
+    "notOK": "Trimite mesaj",
+    "resetPageText1": "Ne bucurăm că v-am putut ajuta cu acest serviciu.",
+    "resetPageText2": "Istoricul dvs. de chat va fi șters și mesajul va fi anulat.",
+    "inputPlaceholder": "Cum vă pot ajuta?",
+    "loader-text": "Vă rugăm să așteptați un moment. Solicitarea dvs. este în curs de procesare.",
+    "chatHistoryDeleted": "Istoricul conversațiilor dvs. va fi șters.",
+    "chatHistoryDeletedAndClosed": "Istoricul conversațiilor dvs. va fi șters, iar chatbot-ul va fi închis.",
+    "suggestedQuestions": [
+        "în prezent nu este utilizat",
+        "în prezent nu este utilizat",
+        "în prezent nu este utilizat",
+        "în prezent nu este utilizat",
+        "în prezent nu este utilizat",
+        "în prezent nu este utilizat"
+    ],
+    "themes": [
+    "Declarație de creanțe",
+        "Motivul creanței",
+        "Plată primită",
+        "Plată în rate",
+        "Obiecție",
+        "Despre cream collection"
+    ]
+},
+
+
+
+"Griechisch": {
+    "greeting": "αυτήν τη στιγμή δεν χρησιμοποιείται",
+    "intro": "αυτήν τη στιγμή δεν χρησιμοποιείται",
+    "consentText": "Έχω διαβάσει, κατανοήσει και αποδεχτεί τους <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>όρους χρήσης και την πολιτική απορρήτου</a>.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "αυτήν τη στιγμή δεν χρησιμοποιείται",
+    "selectQuestion": "Θέμα",
+    "sendButton": "Υποβολή Ερώτησης",
+    "clearButton": "Διαγραφή Ιστορικού",
+    "messageButton": "Αποστολή Μηνύματος",
+    "message2Button": "Αποστολή Μηνύματος",
+    "helpButton": "Προβολή Βοήθειας",
+    "SofortantwortOpenButton": "Λήψη Άμεσης Απάντησης",
+    "SofortantwortCloseButton": "Κλείσιμο Παραθύρου Άμεσης Απάντησης",
+    "cancelButton": "Ακύρωση",
+    "cancel2Button": "Ακύρωση",
+    "confirmButton": "Εντάξει",
+    "confirm2Button": "Εντάξει",
+    "confirm3Button": "Εντάξει", 
+    "confirm4Button": "Εντάξει",
+    "everythingOK": "Όλες οι ερωτήσεις απαντήθηκαν",
+    "notOK": "Αποστολή μηνύματος",
+    "resetPageText1": "Χαιρόμαστε που μπορέσαμε να σας βοηθήσουμε με αυτή την υπηρεσία.",
+    "resetPageText2": "Το ιστορικό συνομιλιών σας θα διαγραφεί και το μήνυμα θα απορριφθεί.",
+    "inputPlaceholder": "Πώς μπορώ να σας βοηθήσω;",
+    "loader-text": "Παρακαλώ περιμένετε λίγο. Το αίτημά σας επεξεργάζεται.",
+    "chatHistoryDeleted": "Το ιστορικό συνομιλιών σας θα διαγραφεί.",
+    "chatHistoryDeletedAndClosed": "Το ιστορικό συνομιλιών σας θα διαγραφεί και το chatbot θα κλείσει.",
+    "suggestedQuestions": [
+        "αυτήν τη στιγμή δεν χρησιμοποιείται",
+        "αυτήν τη στιγμή δεν χρησιμοποιείται",
+        "αυτήν τη στιγμή δεν χρησιμοποιείται",
+        "αυτήν τη στιγμή δεν χρησιμοποιείται",
+        "αυτήν τη στιγμή δεν χρησιμοποιείται",
+        "αυτήν τη στιγμή δεν χρησιμοποιείται"
+    ],
+    "themes": [
+        "Κατάσταση απαιτήσεων",
+        "Λόγος απαίτησης",
+        "Εισερχόμενη πληρωμή",
+        "Πληρωμή σε δόσεις",
+        "Αντίρρηση",
+        "Σχετικά με το cream collection"
+    ]
+},
+
+
+"Italienisch": {
+    "greeting": "attualmente non in uso",
+    "intro": "attualmente non in uso",
+    "consentText": "Ho letto, compreso e accettato i <a id='consent-link' class='special-link' href='{{dataProtectionUrl}}' target='_blank'>termini di utilizzo e l'informativa sulla privacy</a>.",
+    "dataProtectionUrl": "https://www.cream-collection.de/nutzung-and-datenschutz-chatbot/",
+    "commonQuestions": "attualmente non in uso",
+    "selectQuestion": "Tema",
+    "sendButton": "Invia domanda",
+    "clearButton": "Cancella cronologia",
+    "messageButton": "Invia messaggio",
+    "message2Button": "Invia messaggio",
+    "helpButton": "Mostra aiuto",
+    "SofortantwortOpenButton": "Ricevi risposta immediata",
+    "SofortantwortCloseButton": "Chiudi finestra risposta immediata",
+    "cancelButton": "Annulla",
+    "cancel2Button": "Annulla",
+    "confirmButton": "OK",
+    "confirm2Button": "OK",
+    "confirm3Button": "OK",
+    "confirm4Button": "OK",
+    "everythingOK": "Tutte le domande sono state risposte",
+    "notOK": "Invia messaggio",
+    "resetPageText1": "Siamo felici di aver potuto aiutarvi con questo servizio.",
+    "resetPageText2": "La cronologia della chat verrà cancellata e il messaggio verrà eliminato.",
+    "inputPlaceholder": "Come posso aiutarti?",
+    "loader-text": "Attendere un momento. La tua richiesta è in fase di elaborazione.",
+    "chatHistoryDeleted": "La cronologia della chat verrà eliminata.",
+    "chatHistoryDeletedAndClosed": "La cronologia della chat verrà eliminata e il chatbot verrà chiuso.",
+    "suggestedQuestions": [
+        "attualmente non in uso",
+        "attualmente non in uso",
+        "attualmente non in uso",
+        "attualmente non in uso",
+        "attualmente non in uso",
+        "attualmente non in uso"
+    ],
+    "themes": [
+        "Dichiarazione delle pretese",
+        "Motivo della pretesa",
+        "Pagamento ricevuto",
+        "Pagamento rateale",
+        "Obiezione",
+        "Informazioni su cream collection"
+    ]
+},
+
+
+
+};
+
+
+
+function showHelpModal() {
+  const selectedLanguage = document.getElementById('language-dropdown').value;
+
+  // Alle modalen Dialoge ausblenden
+  document.getElementById('user-help-container-de').style.display = 'none';
+  document.getElementById('user-help-container-en').style.display = 'none';
+  document.getElementById('user-help-container-es').style.display = 'none';
+  document.getElementById('user-help-container-tr').style.display = 'none';
+  document.getElementById('user-help-container-sa').style.display = 'none';
+  document.getElementById('user-help-container-ru').style.display = 'none';
+  document.getElementById('user-help-container-pl').style.display = 'none';
+  document.getElementById('user-help-container-ro').style.display = 'none';
+  document.getElementById('user-help-container-gr').style.display = 'none';
+  document.getElementById('user-help-container-it').style.display = 'none';
+
+
+  // Je nach Sprache das richtige Modal anzeigen
+  if (selectedLanguage === 'Deutsch') {
+    document.getElementById('user-help-container-de').style.display = 'flex';
+  } else if (selectedLanguage === 'Englisch') {
+    document.getElementById('user-help-container-en').style.display = 'flex';
+  } else if (selectedLanguage === 'Spanisch') {
+    document.getElementById('user-help-container-es').style.display = 'flex';
+  } else if (selectedLanguage === 'Türkisch') {
+    document.getElementById('user-help-container-tr').style.display = 'flex';
+  } else if (selectedLanguage === 'Arabisch') {
+    document.getElementById('user-help-container-sa').style.display = 'flex';
+  } else if (selectedLanguage === 'Russisch') {
+    document.getElementById('user-help-container-ru').style.display = 'flex';
+  } else if (selectedLanguage === 'Polnisch') {
+    document.getElementById('user-help-container-pl').style.display = 'flex';
+  } else if (selectedLanguage === 'Rumänisch') {
+    document.getElementById('user-help-container-ro').style.display = 'flex';
+  } else if (selectedLanguage === 'Griechisch') {
+    document.getElementById('user-help-container-gr').style.display = 'flex';
+  } else if (selectedLanguage === 'Italienisch') {
+    document.getElementById('user-help-container-it').style.display = 'flex';
+  } else {
+    document.getElementById('user-help-container-de').style.display = 'flex';
+  }
+}
+
+
+
+function closeHelpModal(language) {
+  if (language === 'Deutsch') {
+    document.getElementById('user-help-container-de').style.display = 'none';
+  } else if (language === 'Englisch') {
+    document.getElementById('user-help-container-en').style.display = 'none';
+  } else if (language === 'Spanisch') {
+    document.getElementById('user-help-container-es').style.display = 'none';
+  } else if (language === 'Türkisch') {
+    document.getElementById('user-help-container-tr').style.display = 'none';
+  } else if (language === 'Arabisch') {
+    document.getElementById('user-help-container-sa').style.display = 'none';
+  } else if (language === 'Russisch') {
+    document.getElementById('user-help-container-ru').style.display = 'none';
+  } else if (language === 'Polnisch') {
+    document.getElementById('user-help-container-pl').style.display = 'none';
+  } else if (language === 'Rumänisch') {
+    document.getElementById('user-help-container-ro').style.display = 'none';
+  } else if (language === 'Griechisch') {
+    document.getElementById('user-help-container-gr').style.display = 'none';
+  } else if (language === 'Italienisch') {
+    document.getElementById('user-help-container-it').style.display = 'none';
+  } else {
+    // Falls keine der Sprachen gesetzt ist, Deutsch als Standard verwenden
+    document.getElementById('user-help-container-de').style.display = 'none';
+  }
+}
+
+
+
+
+
+function scrollToLastUserQuestion() {
+    const messagesElement = document.getElementById('chatbot-messages');
+    const lastUserMessage = document.querySelector('.user-message:last-of-type');
+
+    if (lastUserMessage && messagesElement) {
+        const isScrollable = messagesElement.scrollHeight > messagesElement.clientHeight;
+
+        // Scrollt nur, wenn der Nachrichtenbereich tatsächlich scrollen kann
+        if (isScrollable) {
+            messagesElement.scrollTo({
+                top: messagesElement.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+
+
+function scrollBotWindowDown(linesToScroll = 20) {
+    const messagesElement = document.getElementById('chatbot-messages');
+
+    if (messagesElement) {
+        // Höhe des Nachrichtenbereichs berechnen
+        const lineHeight = 18; // Angenommen, jede Zeile hat 18px Höhe
+        const scrollAmount = linesToScroll * lineHeight;
+        const currentScroll = messagesElement.scrollTop;
+        const newScrollPosition = currentScroll + scrollAmount;
+
+        console.log("Scrollen um: ", scrollAmount, " von Position ", currentScroll, " zu ", newScrollPosition);
+
+        messagesElement.scrollTo({
+            top: newScrollPosition,
+            behavior: 'smooth'
+        });
+    } else {
+        console.error("Element #chatbot-messages nicht gefunden");
+    }
+}
+
+// Diese Funktion wird aufgerufen, nachdem die Bot-Nachricht vollständig angezeigt wurde
+function onBotMessageDisplayed() {
+    console.log("onBotMessageDisplayed wurde aufgerufen");
+    setTimeout(() => {
+        scrollBotWindowDown(15); // Scrollt das Bot-Fenster 5 Zeilen nach unten
+    }, 100); // Kurze Verzögerung, um sicherzustellen, dass die Nachricht vollständig gerendert ist
+}
+
+
+
+function saveUserMessage(userMessage) {
+    // ConversationHistory aktualisieren (ungerade Anzahl)
+    conversationHistory.push({ role: 'user', content: userMessage });
+    // Überprüfen, ob das Löschen deaktiviert werden soll
+    if (!preventUserMessageDeletion) {
+        if (conversationHistory.length > 7) {
+            conversationHistory.shift(); // Entferne das älteste Paar
+        }
+    }
+
+    // ChatbotHistory aktualisieren für Absätze
+    const formattedUserMessage = "\n\nBenutzernachricht:\n\n" + userMessage;
+    chatbotHistory.push({ role: 'user', content: formattedUserMessage });
+}
+
+function saveBotMessage(botMessage) {
+    // Überprüfen, ob die Bot-Nachricht eines der Schlüsselwörter enthält
+    if (botMessage.includes("Aktennummer") || botMessage.includes("Passwort")) {
+        preventUserMessageDeletion = true; // Deaktiviere das Löschen für die gesamte Session
+    }
+
+    // ConversationHistory aktualisieren (gerade Anzahl)
+    conversationHistory.push({ role: 'assistant', content: botMessage });
+
+    // ChatbotHistory aktualisieren mit HTML <br> Tags für Absätze
+    const formattedBotMessage = "\n\nAntwort von Clara:\n\n" + botMessage;
+    chatbotHistory.push({ role: 'assistant', content: formattedBotMessage });
+}
+
+
+
+function getConversationHistoryForGPT() {
+    // Rückgabe der letzten 3 Paare plus der aktuellen User-Nachricht
+    return conversationHistory;
+}
+
+
+function cleanTextForTranslation(text) {
+    return text.replace(/<[^>]*>/g, '').trim(); // Entfernt alle HTML-Tags und trimmt Leerzeichen
+}
+
+function getChatbotHistoryForTranslation() {
+    let cleanedHistory = chatbotHistory.map(message => {
+        return {
+            role: message.role,
+            content: cleanTextForTranslation(message.content) // Bereinige den Text von HTML
+        };
+    });
+    return cleanedHistory;
+}
+
+
+
+
+
+
+
+
+
+
+
+//Wird aktuell nicht genutzt
+function formatConversationHistory(history) {
+    let formattedHistory = [];
+    for (let i = 0; i < history.length; i += 2) {
+        if (history[i + 1]) { // Falls eine Antwort existiert
+            formattedHistory.push(history[i + 1]); // Antwort
+        }
+        formattedHistory.push(history[i]); // Frage
+    }
+    return formattedHistory;
+}
+
+
+
+
+
+    // Funktion zum Senden der Nachricht des Benutzers und Abrufen der Antwort des Bots ####################################
+async function sendMessage() {
+    if (isWaitingForResponse) {
+        alert('Bitte warten Sie, bis die aktuelle Anfrage bearbeitet ist.');
+        return; // Beendet die Funktion, wenn bereits auf eine Antwort gewartet wird
+    }
+
+    const inputElement = document.getElementById('chatbot-input');
+    let message = inputElement.value;
+
+    console.log('Inhalt der Nachricht vor dem Senden:', message);
+
+    // Zusätzliche Überprüfung der Länge der Eingabe
+    if (message.length > 2000) {
+        message = message.substring(0, 2000);
+        alert("Ihre Frage wurde auf 2.000 Zeichen gekürzt.");
+    }
+
+    console.log('Inhalt der Nachricht nach Kürzung:', message);
+
+
+    isWaitingForResponse = true; // Status auf "Warten auf Antwort" setzen
+
+    // Erfassen der aktuell ausgewählten Sprache
+    const language = document.getElementById('language-dropdown').value;
+
+    console.log('Aktuelle Sprache:', language);
+
+
+    inputElement.value = '';
+    inputElement.focus();
+
+    const messagesElement = document.getElementById('chatbot-messages-gpt');
+    const newMessageElement = document.createElement('div');
+
+    // Formatierung der Nachricht des Benutzers und Hinzufügen zum Nachrichtenbereich
+    newMessageElement.innerHTML = parseLinks(message);
+    newMessageElement.classList.add('user-message');
+    messagesElement.appendChild(newMessageElement);
+
+
+    scrollToLastUserQuestion();
+
+
+    // Speichere das aktuelle Benutzerfrage-Element
+    currentUserMessageElement = newMessageElement;
+
+    console.log('User message:', message); // Log der gesendeten Nachricht
+
+    // Ergänzen, auch im anderen Chatbot:
+    saveUserMessage(message); // Speichern der Benutzernachricht in beiden Historien
+
+    // loader anzeigen
+       const loaderElement = document.getElementById('loader');
+       loaderElement.style.display = 'block';
+       document.getElementById('loader-container').style.display = 'flex';
+       document.getElementById('loader-text').style.display = 'block';
+
+    // Scrollt die Seite sanft nach oben
+       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const inputField = document.getElementById('chatbot-input');
+    inputField.blur(); // Entfernt den Fokus und schließt die Tastatur auf Mobilgeräten
+
+
+    // Kontext und Kunde aus den CSS-Variablen holen
+    const rulesContext = getComputedStyle(document.documentElement).getPropertyValue('--rules-context').trim();
+    const rulesCustomer = getComputedStyle(document.documentElement).getPropertyValue('--rules-customer').trim();
+
+
+    // Protokollieren der Werte
+    console.log(`Übergebener Kontext: ${rulesContext}`);
+    console.log(`Übergebener Kunde: ${rulesCustomer}`);
+
+
+    try {
+        const response = await fetch(`https://vast-citadel-93222-f91f10e46ebf.herokuapp.com/api/chatbot`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'OpenAI-Beta': 'assistants=v2'
+            },
+            mode: 'cors',  // CORS-Modus hinzufügen
+            body: JSON.stringify({
+                "model": "gpt-4o",  // Füge den Model-Parameter hinzu
+                "temperature": 0.3,  // Optionaler Parameter
+                "top_p": 0.5,  // Optionaler Parameter
+
+
+                "messages": [
+                     ...getConversationHistoryForGPT(), //dies auch im anderen Chatbot ändern bzw. austauschen
+                     {
+                      "role": "user",
+                      "content": `Antworte in der Sprache (${language}) ${message}`
+                    }
+                ],
+
+                "context": rulesContext,
+                "customer": rulesCustomer,
+
+                "files": [],  // Hier können File IDs berücksichtig werden, die als Wissensbasis genutzt werden sollen. Die File ID ist innerhalb der eckigen Klammern in Anführungszeichen zu setzen. Sind keine File IDs angegeben, werden die File IDs genommen, die in der Flask App angegeben sind.
+                "stream": false  // deaktiviert das Streaming
+            })
+        });
+
+        console.log("Server response received");
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Fehler beim Abrufen der Antwort: ${errorText}`);
+        }
+
+	console.log('Vor processIncomingData:', response);
+	await processIncomingData(response);
+	console.log('Nach processIncomingData');
+        console.log("Finale Antwort empfangen.");
+
+        //auch im anderen Chatbot löschen
+        //saveMessage('user', message); // Speichern der Benutzernachricht im Verlauf
+
+
+
+        // Status zurücksetzen
+        isWaitingForResponse = false;
+
+        // Loader verstecken
+          loaderElement.style.display = 'none';
+          document.getElementById('loader-container').style.display = 'none';
+          document.getElementById('loader-text').style.display = 'none';
+
+    } catch (error) {
+        console.error("Request failed:", error);
+        const errorElement = document.createElement('div');
+        errorElement.textContent = 'Error: ' + error.message;
+        messagesElement.appendChild(errorElement);
+
+        // Status zurücksetzen
+        isWaitingForResponse = false;
+
+        // Loader verstecken
+          loaderElement.style.display = 'none';
+          document.getElementById('loader-container').style.display = 'none';
+          document.getElementById('loader-text').style.display = 'none';
+    }
+}
+
+
+
+
+let currentBotMessageElement = null; // Variable zum Speichern des aktuellen Bot-Nachrichten-Elements
+
+async function processIncomingData(response) {
+    console.log('Received response:', response);
+
+    // Empfange die gesamte Antwort als JSON
+    const responseData = await response.json();
+
+    // Extrahiere den Inhalt der Antwort
+    let fullMessage = responseData.choices[0].message.content;
+    console.log("Received full message:", fullMessage); // Logge die vollständige Nachricht
+
+    // Bereinigung der Antwort
+    fullMessage = fullMessage.replace(/```html/g, '');  // Entferne ```html
+    fullMessage = fullMessage.replace(/```/g, '');  // Entferne alle übrigen ```
+    fullMessage = fullMessage.replace(/^\s*html\s*$/gm, '');  // Entferne "html", wenn es alleine in einer Zeile steht
+
+
+    // Zeige die empfangene Nachricht im Chatfenster an
+    displayCleanedData(fullMessage);
+
+    // Speichere die Bot-Antwort
+    saveBotMessage(fullMessage);
+
+    // Setze die Variable zurück, um die nächste Antwort korrekt zu verarbeiten
+    currentBotMessageElement = null;
+
+    // Zurücksetzen für die nächste Nachricht
+    hasLoggedDisplayData = false;
+
+    // Status zurücksetzen
+    isWaitingForResponse = false;
+
+
+}
+
+
+
+
+function displayCleanedData(data) {
+    if (data && typeof data === 'string') {
+        const messagesElement = document.getElementById('chatbot-messages-gpt');
+
+        // Überprüfen, ob die Nachricht bereits geloggt wurde
+        if (!currentBotMessageElement) {
+            currentBotMessageElement = document.createElement('div');
+            currentBotMessageElement.classList.add('bot-message');
+            messagesElement.appendChild(currentBotMessageElement);
+        }
+
+        // Aktualisieren Sie den Inhalt der Nachricht, ohne das Logging mehrfach zu machen
+        if (!hasLoggedDisplayData) {
+            currentBotMessageElement.innerHTML = data;
+            // console.log("Nachricht erfolgreich aktualisiert:", data);
+            hasLoggedDisplayData = true; // Setzt das Flag, um mehrfaches Logging zu vermeiden
+        }
+
+
+	scrollToLastUserQuestion();
+        onBotMessageDisplayed(); // Scroll-Funktion nach dem Anzeigen der Bot-Nachricht aufrufen
+
+
+    } else {
+        console.error("Ungültige Datenstruktur oder leere Daten:", data);
+    }
+}
+
+
+
+
+
+
+function clearMessages() {
+    //location.reload(); Lädt die Seite neu
+    const messagesElement = document.getElementById('chatbot-messages-gpt');
+    while (messagesElement.firstChild) {
+        messagesElement.removeChild(messagesElement.firstChild);
+    }
+
+    // Leere beide Historien (ConversationHistory und ChatbotHistory)
+    conversationHistory = []; // Setzt die ConversationHistory zurück
+    chatbotHistory = []; // Setzt die ChatbotHistory zurück
+}
+
+
+
+
+function updateSuggestedQuestions() {
+    const selectedLanguage = document.getElementById('language-dropdown').value;
+    setSuggestedQuestionsInDOM(selectedLanguage);
+}
+
+
+
+
+
+
+
+
+
+
+
+function setSuggestedQuestionsInDOM(language) {
+    const translations = textTranslations[language];
+
+    // Aktualisiere die statische Liste der "Beliebten Themen"
+    const originalQuestionsContainer = document.getElementById('suggested-questions');
+    const originalQuestionsHTML = `
+      <p class="suggested-title" style="font-weight: bold; margin: 0 0 10px 0;">${translations.commonQuestions}</p>
+      <ul class="suggested-list">
+        ${translations.suggestedQuestions.map(question => `
+          <li class="suggested-question-item" onclick="sendSuggestedMessage('${question}')">${question}</li>
+        `).join('')}
+      </ul>`;
+    originalQuestionsContainer.innerHTML = originalQuestionsHTML;
+}
+
+
+
+
+
+
+function setThemesDropdownInDOM(language) {
+  const translations = textTranslations[language];
+  const themesContainer = document.getElementById('theme');
+
+  const themesHTML = `
+    <option value="">${translations.selectQuestion}</option>
+    ${translations.themes.map(theme => `
+      <option value="${theme}">${theme}</option>
+    `).join('')}
+  `;
+
+  themesContainer.innerHTML = themesHTML;
+}
+
+
+
+
+
+
+function updateFlagAndSendMessage() {
+    console.log("updateFlagAndSendMessage aufgerufen");
+
+    const dropdown = document.getElementById('language-dropdown');
+    const selectedOption = dropdown.options[dropdown.selectedIndex];
+    const flagClass = selectedOption.getAttribute('data-flag');
+    const selectedLanguage = document.getElementById('language-dropdown').value;
+
+    console.log(`Ausgewählte Sprache: ${selectedLanguage}`);
+    console.log(`Flaggen-Klasse: ${flagClass}`);
+
+    // Aktualisiere die Flagge neben dem Dropdown
+    document.getElementById('selected-flag').className = `flag-icon ${flagClass}`;
+    console.log("Flagge aktualisiert");
+
+    // Übersetze den Text basierend auf der ausgewählten Sprache
+    const translations = textTranslations[selectedLanguage];
+    console.log("Übersetzungen geladen:", translations);
+
+    // Aktualisiere die `Themes`-Dropdown-Optionen:
+    setThemesDropdownInDOM(selectedLanguage);
+
+    // Ersetze {{dataProtectionUrl}} im consentText durch die URL aus den Sprachdaten
+    const consentTextWithUrl = translations.consentText.replace('{{dataProtectionUrl}}', translations.dataProtectionUrl);
+    console.log("Nutzungsbedingungen-Text aktualisiert:", consentTextWithUrl);
+
+    // Aktualisiere den Text der Checkbox mit dem aktualisierten consentText
+    const consentLabel = document.querySelector('#chatbot-consent label');
+    consentLabel.innerHTML = consentTextWithUrl;
+    console.log("Consent-Label aktualisiert");
+
+    // Aktualisiere die Texte der Buttons
+    //document.getElementById('chatbot-send-button').textContent = translations.sendButton;
+    //console.log("Send-Button aktualisiert");
+
+    //document.getElementById('chatbot-clear-button').textContent = translations.clearButton;
+    //console.log("Clear-Button aktualisiert");
+
+    document.getElementById('notOK').textContent = translations.notOK;
+    console.log("Nachricht senden-Button aktualisiert");
+
+    document.getElementById('everythingOK').textContent = translations.everythingOK;
+    console.log("Everything-OK-Button aktualisiert");
+
+
+    //document.getElementById('chatbot-Help-button').textContent = translations.helpButton;
+    //console.log("Help-Button aktualisiert");
+
+    document.getElementById('instant-answer-dialog-button').textContent = translations.SofortantwortOpenButton;
+    console.log("Instant-Answer-Open-Button aktualisiert");
+
+    //document.getElementById('instant-answer-dialog-schliessen-button').textContent = translations.SofortantwortCloseButton;
+    //console.log("Instant-Answer-Close-Button aktualisiert");
+
+    //document.getElementById('message-send-button').textContent = translations.message2Button;
+    //console.log("Message2-Button aktualisiert");
+
+    document.getElementById('confirm-delete-button').textContent = translations.confirmButton;
+    console.log("Confirm-Delete-Button aktualisiert");
+
+    document.getElementById('confirm-delete-button2').textContent = translations.confirm2Button;
+    console.log("Confirm-Delete-Button2 aktualisiert");
+
+    document.getElementById('modal-ok-button').textContent = translations.confirm4Button;
+    console.log("modal-ok-button aktualisiert");
+
+    document.getElementById('cancel-button').textContent = translations.cancelButton;
+    console.log("Cancel-Button aktualisiert");
+
+    document.getElementById('cancel2-button').textContent = translations.cancel2Button;
+    console.log("Cancel2-Button aktualisiert");
+
+    document.getElementById('resetPageText1').textContent = translations.resetPageText1;
+    console.log("Reset-Text 1 aktualisiert");
+
+    document.getElementById('resetPageText2').textContent = translations.resetPageText2;
+    console.log("Reset-Text 2 aktualisiert");
+
+    // Aktualisiere den Loader-Text
+    document.getElementById('loader-text').textContent = translations['loader-text'];
+    console.log("Loader-Text aktualisiert");
+
+    // Aktualisiere den Platzhaltertext im Eingabefeld
+    document.getElementById('chatbot-input').placeholder = translations.inputPlaceholder;
+    //document.getElementById('expanded-chatbot-input').placeholder = translations.inputPlaceholder;
+    console.log("Platzhalter im Eingabefeld aktualisiert");
+
+    // Neue Texte für die Modalen Dialoge (Chat-Historie)
+    document.getElementById('chat-history-deleted').textContent = translations.chatHistoryDeleted;
+    console.log("Chat-History-Deleted-Text aktualisiert");
+
+    document.getElementById('chat-history-deleted-and-closed').textContent = translations.chatHistoryDeletedAndClosed;
+    console.log("Chat-History-Deleted-And-Closed-Text aktualisiert");
+ 
+
+    // Nur senden, wenn die Checkbox aktiviert ist
+    if (document.getElementById('chatbot-consent-checkbox').checked) {
+        console.log("Checkbox ist aktiviert, sendLanguageMessage wird aufgerufen");
+        sendLanguageMessage();
+    } else {
+        console.log("Checkbox ist nicht aktiviert, keine Nachricht wird gesendet");
+    }
+}
+
+
+
+
+
+
+
+// Funktion zum Aktualisieren der vorgeschlagenen Fragen
+function updateSuggestedQuestions() {
+    const selectedLanguage = document.getElementById('language-dropdown').value;
+    const translations = textTranslations[selectedLanguage];
+    const suggestedQuestionsList = document.querySelector('#suggested-questions ul');
+
+    // Leeren Sie die Liste zuerst
+    suggestedQuestionsList.innerHTML = '';
+
+    // Fügen Sie die Fragen basierend auf der ausgewählten Sprache hinzu
+    translations.suggestedQuestions.forEach(question => {
+        const li = document.createElement('li');
+        li.style.cursor = 'pointer';
+        li.style.color = 'var(--primary-font-color)';
+        li.style.marginBottom = '5px';
+        li.style.textDecoration = 'underline';
+        li.onclick = function() { sendSuggestedMessage(question); };
+        li.textContent = question;
+        suggestedQuestionsList.appendChild(li);
+    });
+}
+
+
+
+
+
+  // Funktion zum Senden in der ausgewählten Sprache
+function sendLanguageMessage() {
+    const language = document.getElementById('language-dropdown').value;
+    console.log('Ausgewählte Sprache:', language);
+    
+    // Übersetzungstabelle für den Satz "Lass uns bitte <Sprache> sprechen."
+    const translations = {
+    "Deutsch": "Ich spreche Deutsch. Bitte übersetze die letzte Nachricht und auch alle folgenden ins Deutsche.", 
+    "Englisch": "I speak English. Please translate your last message and also all following ones into English.",
+    "Spanisch": "Hablo español. Por favor, traduce tu último mensaje y también los siguientes al español.",
+    "Türkisch": "Türkçe konuşuyorum. Lütfen son mesajınızı ve tüm sonraki mesajları Türkçeye çevirin.",
+    "Arabisch": "أنا أتحدث العربية. من فضلك ترجم رسالتك الأخيرة وجميع الرسائل التالية إلى اللغة العربية.",
+    "Russisch": "Я говорю по-русски. Пожалуйста, переведите ваше последнее сообщение и все последующие на русский язык.",
+    "Polnisch": "Mówię po polsku. Proszę przetłumacz ostatnią wiadomość i wszystkie kolejne na język polski.",
+    "Rumänisch": "Vorbesc românește. Te rog să traduci ultimul mesaj și toate cele următoare în română.",
+    "Griechisch": "Μιλάω ελληνικά. Παρακαλώ μετάφρασε το τελευταίο σου μήνυμα και όλα τα επόμενα στα ελληνικά.",
+    "Italienisch": "Parlo italiano. Per favore, traduci il tuo ultimo messaggio e anche tutti i successivi in italiano."
+    };
+
+    // Nachricht in der ausgewählten Sprache
+    const message = translations[language];
+    console.log('Übersetzte Nachricht:', message);
+
+    // Sende die Nachricht in der ausgewählten Sprache
+    sendSuggestedMessage(message);
+}
+
+
+
+    // Funktion zum Senden einer vorgeschlagenen Nachricht
+    function sendSuggestedMessage(message) {
+      const consentGiven = document.getElementById('chatbot-consent-checkbox').checked;
+      console.log('Consent-Checkbox:', consentGiven);
+
+      if (!consentGiven) {
+        alert('Bitte akzeptieren Sie die Nutzungsbedingungen, bevor Sie eine Frage stellen.');
+        return;
+      }
+
+      console.log('Nachricht, die gesendet wird:', message);
+
+      const inputElement = document.getElementById('chatbot-input');
+      inputElement.value = message;
+      sendMessage(); // Sende die vorgefertigte Nachricht
+   
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+    }
+
+
+
+
+
+    // Funktion zum Erkennen und Formatieren von Links in Nachrichten
+    function parseLinks(text) {
+        const urlPattern = /(https?:\/\/[^\s]+)/g;
+        return text.replace(urlPattern, (url) => {
+            return `<a href="${url}" target="_blank">${url}</a>`;
+        });
+    }
+  
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+      const imageElement = document.getElementById('clara-image');
+
+      if (imageElement) {
+        const imageUrl = getComputedStyle(document.documentElement).getPropertyValue('--clara-image-url').trim();
+        console.log('Bild-URL aus CSS-Variable:', imageUrl);
+
+        // Setzen des Hintergrundbildes
+        imageElement.style.backgroundImage = imageUrl;
+
+        console.log('Hintergrundbild gesetzt:', imageElement.style.backgroundImage);
+      } else {
+        console.error('Bild-Element nicht gefunden');
+      }
+    });
+
+
+
+
+
+
+
+
+// Funktion zum Initialisieren des Chatbot-Status
+function initializeChatbot() {
+    const inputElement = document.getElementById('chatbot-input');
+    const sendButtonElement = document.getElementById('chatbot-send-button');
+    const clearButtonElement = document.getElementById('chatbot-clear-button');
+    
+    // Überprüfen, ob die Elemente existieren, bevor sie manipuliert werden
+    if (inputElement) inputElement.disabled = true;
+    if (sendButtonElement) sendButtonElement.disabled = true;
+    if (clearButtonElement) clearButtonElement.disabled = true;
+
+    // SVG-Icons initial deaktivieren
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => {
+        icon.style.pointerEvents = 'none'; // Klickbarkeit deaktivieren
+        icon.style.opacity = '0.5'; // Sichtbarkeit reduzieren (optional)
+    });
+}
+
+// Funktion zum Überprüfen der Checkbox
+document.getElementById('chatbot-consent-checkbox').addEventListener('change', function() {
+    const isChecked = this.checked;
+
+    // Basierend auf dem Status der Checkbox die Eingabefelder aktivieren oder deaktivieren
+    document.getElementById('chatbot-input').disabled = !isChecked;
+    document.getElementById('chatbot-send-button').disabled = !isChecked;
+    document.getElementById('chatbot-clear-button').disabled = !isChecked;
+
+      // SVG-Icons je nach Status der Checkbox aktivieren oder deaktivieren
+    const icons = document.querySelectorAll('.icon.hover-scale');
+    icons.forEach(icon => {
+        if (isChecked) {
+            icon.style.pointerEvents = 'auto'; // Klickbarkeit aktivieren
+            icon.style.opacity = '1'; // Volle Sichtbarkeit (optional)
+        } else {
+            icon.style.pointerEvents = 'none'; // Klickbarkeit deaktivieren
+            icon.style.opacity = '0.5'; // Sichtbarkeit reduzieren (optional)
+        }
+    });
+});
+
+// Initiale Deaktivierung beim Laden der Seite
+initializeChatbot();
+
+
+
+// Funktion zum Öffnen des Modal-Dialogs nur, wenn die Checkbox gesetzt ist
+document.getElementById('expand-icon').addEventListener('click', function() {
+  const isChecked = document.getElementById('chatbot-consent-checkbox').checked;
+  
+  if (isChecked) {
+    const chatbotInputValue = document.getElementById('chatbot-input').value;
+    const expandedInput = document.getElementById('expanded-chatbot-input');
+    
+    expandedInput.value = chatbotInputValue; // Übernahme des Inhalts ins Modal
+    document.getElementById('chatbot-input-modal').style.display = 'block'; // Modal anzeigen
+    
+    // Cursor ans Ende des Textes setzen
+    expandedInput.focus();
+    expandedInput.setSelectionRange(expandedInput.value.length, expandedInput.value.length);
+  } else {
+    alert('Bitte stimmen Sie den Bedingungen zu, bevor Sie das Modal öffnen.');
+  }
+});
+
+
+
+// Funktion zum Schließen des Modal-Dialogs und Zurückübertragen des Inhalts ins Chatbot-Input
+function closeModal() {
+    console.log('OK-Button wurde geklickt und closeModal() aufgerufen');
+
+    // Überprüfen, ob der MIC-Button aktiv ist (die Spracherkennung läuft)
+    if (micButton.classList.contains('active')) {
+        // Simuliere einen Klick auf den MIC-Button, um die Spracherkennung zu stoppen
+        micButton.click();
+        console.log('Mikrofon durch OK-Button gestoppt (simulierter Klick auf MIC)');
+    }
+
+    // Übernahme des Inhalts zurück ins Input-Feld
+    const expandedInputValue = document.getElementById('expanded-chatbot-input').value;
+    document.getElementById('chatbot-input').value = expandedInputValue;
+    
+    // Modal verstecken
+    document.getElementById('chatbot-input-modal').style.display = 'none';
+    console.log('Modal geschlossen');
+}
+
+
+
+
+
+
+
+
+
+// Überprüfen, ob die Web Speech API im Browser verfügbar ist
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+    // Spracheingaben auf Deutsch setzen
+    recognition.lang = 'de-DE';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+    recognition.continuous = true;
+
+    // Zugriff auf das Eingabefeld und den Mikrofon-Button
+    const chatInput = document.getElementById('expanded-chatbot-input');
+    const micButton = document.getElementById('micButton');
+
+    
+    // Event-Listener für den Mikrofon-Button
+    micButton.addEventListener('click', function() {
+    if (!isRecognizing && !recognitionStarted) {  // Änderung hier
+        recognition.start();
+        recognitionStarted = true;  // Spracherkennung wurde gestartet
+        micButton.textContent = 'Mikrofon ist eingeschaltet';  // Button-Text ändern
+        micButton.classList.add('active');  // Button visuell hervorheben
+        console.log('Spracherkennung gestartet');
+        isRecognizing = true;
+    } else {
+        recognition.stop();
+        recognitionStarted = false;  // Spracherkennung wurde gestoppt
+        isRecognizing = false;  // Direkte Änderung, um das Stoppen des Erkennungszustands zu reflektieren
+        micButton.textContent = 'MIC';  // Button-Text zurücksetzen
+        micButton.classList.remove('active');  // Button-Style zurücksetzen
+        console.log('Spracherkennung gestoppt');
+    }
+});
+
+let lastRecognizedText = '';  // Globale Variable für den gesamten Text
+
+
+
+recognition.onsoundend = function() {
+    console.log('Spracherkennung: Soundende erkannt, Mikrofon wird neu gestartet');
+
+    // Prüfe, ob die Spracherkennung nicht bereits läuft
+    if (isRecognizing && !recognitionStarted) {
+        // Setze eine Verzögerung, um sicherzustellen, dass `recognition.start()` nur nach vollständigem Stopp aufgerufen wird
+        setTimeout(function() {
+            try {
+                recognition.start();  // Starte die Erkennung nach einer Pause neu
+                recognitionStarted = true;  // Setze erst hier auf true, nach erfolgreichem Start
+                micButton.textContent = 'Mikrofon ist eingeschaltet';  // Button-Text ändern
+                micButton.classList.add('active');  // Button-Style wieder aktiv setzen
+                console.log('MIC-Button auf aktiv gesetzt, Mikrofon neu gestartet');
+            } catch (e) {
+                console.error('Fehler beim Starten der Spracherkennung:', e);
+                recognitionStarted = false;  // Im Fehlerfall setzen wir den Zustand wieder auf false
+            }
+        }, 300);  // Erhöhe die Verzögerung auf 300 ms für einen sauberen Neustart
+    } else {
+        console.log('Spracherkennung läuft bereits, Neustart wird abgebrochen');
+    }
+};
+
+
+// Dieses Event wird ausgelöst, wenn die Spracherkennung vollständig beendet wird
+recognition.onend = function() {
+    console.log('Spracherkennung wurde vollständig beendet');
+    recognitionStarted = false;  // Setze zurück, da die Spracherkennung beendet wurde
+
+    if (!isRecognizing) {
+        micButton.textContent = 'MIC';  // Button-Text zurücksetzen
+        micButton.classList.remove('active');  // Button-Style zurücksetzen
+        console.log('MIC-Button auf inaktiv gesetzt, Spracherkennung gestoppt');
+    } else {
+        console.log('Spracherkennung wurde neu gestartet, MIC-Button bleibt aktiv');
+    }
+};
+
+
+
+recognition.addEventListener('result', function(event) {
+    let currentRecognizedText = event.results[0][0].transcript;  // Erkannten Text speichern
+    console.log('Erkannter Text:', currentRecognizedText);
+
+    // Füge den erkannten Text an den bestehenden Text im Eingabefeld an
+    chatInput.value += ' ' + currentRecognizedText;  // Immer neuen Text anhängen
+
+    // Stoppe die Spracherkennung
+    recognition.stop();
+
+    // Nur neu starten, wenn isRecognizing noch auf true gesetzt ist und der MIC-Button aktiv ist
+    if (isRecognizing) {
+        setTimeout(function() {
+            recognition.start();  // Starte die Erkennung nur neu, wenn der MIC-Button aktiv ist
+        }, 100);  // 100 ms Verzögerung für einen sauberen Neustart
+    }
+});
+
+
+
+
+
+
+
+
+    // Fehlerbehandlung
+    recognition.addEventListener('error', function(event) {
+        console.error('Fehler bei der Spracherkennung:', event.error);
+        isRecognizing = false;  // Im Fehlerfall sicherstellen, dass der Zustand korrekt gesetzt ist
+    });
+
+} else {
+    console.error('Web Speech API wird in diesem Browser nicht unterstützt.');
+}
+
+
+
+
+
+function handleThemeChange() {
+  const selectedTheme = document.getElementById('theme').value;
+  if (selectedTheme) {
+    sendSuggestedMessage(selectedTheme);
+  }
+}
+
+
+function handleThemeChange() {
+    const consentGiven = document.getElementById('chatbot-consent-checkbox').checked;
+    
+    if (!consentGiven) {
+        alert('Bitte akzeptieren Sie die Nutzungsbedingungen, bevor Sie eine Frage stellen.');
+        return; // Bricht die Funktion ab, falls die Checkbox nicht aktiviert ist
+    }
+
+    const selectedTheme = document.getElementById('theme').value;
+    
+    if (selectedTheme) {
+        sendSuggestedMessage(selectedTheme); // Löst die Frage basierend auf dem ausgewählten Theme aus
+    }
+}
+
+
+
+
+
+
+// Funktion zum Übertragen des Nachrichtenfelds in den Chatbot
+function transferMessageToChatbot() {
+  const consentGiven = document.getElementById('chatbot-consent-checkbox').checked;
+  
+  // Prüfen, ob die Consent-Checkbox aktiv ist
+  if (!consentGiven) {
+    alert('Bitte akzeptieren Sie die Nutzungsbedingungen, bevor Sie die Nachricht senden.');
+    return;
+  }
+
+openChatbot();
+
+  // Das Nachrichtenfeld und Aktennummer anhand der data-id finden
+  const messageField = document.querySelector('#contact-form-nachricht');
+  const caseNumberField = document.querySelector('#contact-form-aktennummer');
+
+  // Sicherstellen, dass sowohl das Nachrichtenfeld als auch die Aktennummer existieren
+  if (messageField && caseNumberField) {
+    const message = messageField.value.trim(); // Inhalt des Nachrichtenfelds
+    const caseNumber = caseNumberField.value.trim(); // Inhalt des Aktennummer-Felds
+
+    // Nachricht mit optionaler Aktennummer erstellen
+    let fullMessage = message;
+
+    if (caseNumber) {
+      fullMessage += `\nAktennummer: ${caseNumber}`;
+    }
+
+    if (fullMessage.trim()) {
+      // Nachricht in das Chatbot-Textfeld übertragen
+      document.getElementById('chatbot-input').value = fullMessage;
+
+      // Nachricht automatisch senden
+      sendMessage();
+    } else {
+      alert('Das Nachrichtenfeld ist leer.');
+    }
+  } else {
+    alert('Nachrichtenfeld oder Aktennummer nicht gefunden.');
+  }
+}
+
+
+
+
+function openChatbot() {
+    // Den Chatbot-Container anzeigen
+    document.getElementById('chatbot-container').style.display = 'flex';
+
+    // Den Button "Sofortantwort" ausblenden, da der Chatbot nun eingeblendet ist
+    document.getElementById('instant-answer-dialog-button').style.display = 'none';
+
+    // Den Button "Nachricht senden" ausblenden
+    document.getElementById('message-send-button').style.display = 'none';
+
+   
+    // Den Button "Sofortantwort schließen" einblenden, um den Chatbot wieder auszublenden
+    // document.getElementById('instant-answer-dialog-schliessen-button').style.display = 'block';
+
+}
+
+// Standardmäßig den Chatbot-Container beim Laden der Seite verstecken
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('chatbot-container').style.display = 'none';
+    // document.getElementById('instant-answer-dialog-schliessen-button').style.display = 'none';    
+    
+});
+
+
+function closeChatbot() {
+    // Den Chatbot-Container schließen
+    document.getElementById('chatbot-container').style.display = 'none';
+
+    // Den Button "Sofortantwort" einblenden, da der Chatbot nun ausgeblendet ist
+    document.getElementById('instant-answer-dialog-button').style.display = 'block';
+
+    // Den Button "Nachricht senden" einblenden
+    document.getElementById('message-send-button').style.display = 'block';
+    
+    // Den Button "Sofortantwort schließen" ausblenden
+    document.getElementById('instant-answer-dialog-schliessen-button').style.display = 'none';
+
+};
+
+
+
+function getChatbotHistory() {
+    // Hole alle User- und Bot-Nachrichten-Elemente
+    const userMessages = document.querySelectorAll('#chatbot-messages-gpt .user-message');
+    const botMessages = document.querySelectorAll('#chatbot-messages-gpt .bot-message');
+    
+    // Debugging-Logs: Überprüfe, ob Nachrichten-Elemente gefunden werden
+    if (userMessages.length === 0) {
+        console.error('Keine User-Nachrichten gefunden. Überprüfe die HTML-Struktur und die Klassen.');
+    }
+    
+    if (botMessages.length === 0) {
+        console.error('Keine Bot-Nachrichten gefunden. Überprüfe die HTML-Struktur und die Klassen.');
+    }
+    
+    let chatHistory = '';
+    let messageCount = Math.min(userMessages.length, botMessages.length); // Anzahl der zu bearbeitenden Nachrichten
+    
+    console.log(`Anzahl der User-Nachrichten: ${userMessages.length}`);
+    console.log(`Anzahl der Bot-Nachrichten: ${botMessages.length}`);
+    console.log(`Verarbeitete Nachrichten-Paare: ${messageCount}`);
+
+    for (let i = 0; i < messageCount; i++) {
+        let userMessage = userMessages[i].textContent.replace(/<[^>]*>/g, '').trim(); // Entferne HTML-Tags und Leerzeichen
+        let botMessage = botMessages[i].textContent.replace(/<[^>]*>/g, '').trim(); // Entferne HTML-Tags und Leerzeichen
+
+        // Füge die Nachrichten im gewünschten Format hinzu
+        chatHistory += `Benutzernachricht:###${userMessage}######Chatbot-Nachricht:###${botMessage}#########`;
+
+        // Log für jede Nachricht
+        console.log(`Benutzernachricht [${i + 1}]: ${userMessage}`);
+        console.log(`Chatbot-Nachricht [${i + 1}]: ${botMessage}`);
+    }
+
+    console.log("Strukturierte Chat-Historie:");
+    console.log(chatHistory.trim());
+
+    return chatHistory.trim(); // Rückgabe der strukturierten Chat-Historie
+}
+
+
+
+// Funktion zum Abrufen des Namens aus dem Formular
+function getFormName() {
+    const formNameElement = document.querySelector('#contact-form-name'); // Holt das Eingabefeld
+    let formName = ''; // Korrekte Deklaration der Variablen
+    
+    if (formNameElement) {
+        formName = formNameElement.value; // Weist den Wert des Eingabefelds der Variable zu
+    }
+
+    return formName; 
+}
+
+
+// Funktion zum Abrufen der Email aus dem Formular
+function getFormEmail() {
+    const formEmailElement = document.querySelector('#contact-form-email'); // Holt das Eingabefeld
+    let formEmail = ''; // Korrekte Deklaration der Variablen
+    
+    if (formEmailElement) {
+        formEmail = formEmailElement.value; // Weist den Wert des Eingabefelds der Variable zu
+    }
+
+    return formEmail; 
+}
+
+
+// Funktion zum Abrufen der Nachricht aus dem Formular
+function getKontaktnachricht() {
+    const formKontaktnachrichtElement = document.querySelector('#contact-form-nachricht'); // Holt das Eingabefeld
+    let formKontaktnachricht = ''; // Korrekte Deklaration der Variablen
+    
+    if (formKontaktnachrichtElement) {
+        formKontaktnachricht = formKontaktnachrichtElement.value; // Weist den Wert des Eingabefelds der Variable zu
+    }
+
+    return formKontaktnachricht; 
+}
+
+
+
+
+
+
+
+// Funktion zum Abrufen und Anzeigen der übersetzten Daten ohne Streaming
+async function translateChatHistoryToGermanWithFlaskAPI(chatHistory) {
+    
+    // Loader anzeigen
+    const loaderElement = document.getElementById('loader');
+    loaderElement.style.display = 'block';
+    document.getElementById('loader-container').style.display = 'flex';
+    document.getElementById('loader-text').style.display = 'block';
+    
+    try {
+        // Anfrage an die Flask-API
+        const response = await fetch('https://app-translate-chat-translate-d90fae4da777.herokuapp.com/translate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ text: chatHistory })  // Chatverlauf übergeben
+        });
+
+        // Die JSON-Antwort verarbeiten (kein Streaming mehr)
+        const responseData = await response.json();
+        let receivedText = ''; // Variable, um den gesamten Text zu sammeln
+
+        // Überprüfen, ob Daten vorhanden sind und extrahiere den Text
+        if (responseData && responseData.choices && responseData.choices[0].message.content) {
+            receivedText = responseData.choices[0].message.content;  // Empfangenen Text sammeln
+        }
+
+        // Entferne \n und spezifische Zeichenfolgen aus dem gesamten Text
+        console.log('Vor der Bereinigung:', receivedText);
+        receivedText = receivedText.replace(/```html/g, '').replace(/```/g, '');  // Unerwünschte Zeichenfolgen entfernen
+        receivedText = insertParagraphs(receivedText); // Füge Absätze ein
+        console.log('Nach der Bereinigung:', receivedText);
+
+        console.log('Verarbeiteter Text:', receivedText); // Zeige den verarbeiteten Text in der Konsole
+
+        return receivedText.trim(); // Gibt den gesamten Text zurück, wenn der Vorgang abgeschlossen ist
+
+    } catch (error) {
+        console.error("Fehler bei der Übersetzung:", error);  // Fehlerbehandlung
+    } finally {
+        // Loader verstecken
+        loaderElement.style.display = 'none';
+        document.getElementById('loader-container').style.display = 'none';
+        document.getElementById('loader-text').style.display = 'none';
+    }
+}
+
+
+
+
+
+function insertParagraphs(text) {
+    // Füge nach jedem Satzzeichen gefolgt von einem Leerzeichen einen Absatz ein
+    return text.replace(/([.!?])\s+/g, '$1\n\n');
+}
+
+
+
+
+// Öffne das Modal für die Bestätigung zum Löschen der Chat-Historie
+function openDeleteConfirmation() {
+    document.getElementById('delete-confirmation-modal').style.display = 'flex';
+}
+
+
+//12345
+
+// Öffne das Modal für die Bestätigung zum Löschen der Chat-Historie und Schließen des Chatbots
+function openDeleteConfirmation2() {
+    document.getElementById('delete-history-and-close-chatbot-background').style.display = 'flex';
+    document.body.classList.add("modal-open"); // Modalität aktivieren
+
+}
+
+
+
+
+
+// Schließe das Modal ohne Aktion
+function closeDeleteConfirmation() {
+    document.getElementById('delete-confirmation-modal').style.display = 'none';
+    document.getElementById('delete-confirmation-modal3').style.display = 'none';
+    document.getElementById('delete-history-and-close-chatbot-background').style.display = 'none';
+    document.body.classList.remove("modal-open"); // Modalität deaktivieren
+
+}
+
+
+
+// Bestätige das Löschen und lösche die Nachrichten
+function confirmDelete() {
+    clearMessages(); // Die Funktion zum Löschen der Chat-Historie
+    closeDeleteConfirmation(); // Schließe das Modal nach der Bestätigung
+}
+
+// Bestätige das Löschen, lösche die Nachrichten und schließe den Chatbot
+function confirmDelete2() {
+    clearMessages(); // Die Funktion zum Löschen der Chat-Historie
+    closeDeleteConfirmation(); // Schließe das Modal nach der Bestätigung
+    closeChatbot(); //Schließe den Chatbot
+}
+
+
+
+
+async function getTranslatedChatHistoryForEmail() {
+    console.log("Starte das Holen und Übersetzen des Chatverlaufs...");
+
+    // Hol den Chatverlauf
+    const chatHistory = getChatbotHistoryForTranslation();  // Bestehende Funktion zur Chatverlauf-Abfrage
+    console.log("Originaler Chatverlauf: ", chatHistory);
+
+    try {
+        // Übersetze den Chatverlauf
+        const translatedText = await translateChatHistoryToGermanWithFlaskAPI(chatHistory);
+        console.log("Übersetzter Chatverlauf: ", translatedText);
+
+        return translatedText;  // Gib den übersetzten Verlauf zurück
+
+    } catch (error) {
+        console.error('Fehler bei der Übersetzung des Chatverlaufs:', error);
+        throw error;  // Gib den Fehler weiter, damit er an anderer Stelle abgefangen werden kann
+    }
+}
+
+
+
+
+async function openConfirmationModal() {
+    // Setzt die Werte der Formularfelder in den modalen Dialog
+    const nameValue = document.getElementById('contact-form-name').value;
+    const emailValue = document.getElementById('contact-form-email').value;
+    const messageValue = document.getElementById('contact-form-nachricht').value;
+
+    document.getElementById("modalName").innerText = nameValue;
+    document.getElementById("modalEmail").innerText = emailValue;
+
+
+    document.getElementById("modalMessage").value = messageValue;  // Setze den Text in das textarea
+    // document.getElementById("modalMessage").innerText = messageValue;  Rückkehr zum Dialog ohne Änderungsmöglichkeit des Messagefeldes
+ 
+
+
+    // Die übersetzte Chat-Historie abrufen
+    const translatedChatHistory = insertParagraphs(await getTranslatedChatHistoryForEmail());
+    
+    // Übersetzte Chat-Historie im Modal anzeigen
+    document.getElementById('translated-chat-history').innerText = translatedChatHistory;
+
+
+    // Element-Referenzen erstellen
+    const languageDropdown = document.getElementById('language-dropdown');
+    const instantAnswerButton = document.getElementById('instant-answer-dialog-button');
+    let targetElement;
+
+    // Überprüfen, ob Language Dropdown sichtbar ist
+    if (languageDropdown && languageDropdown.offsetParent !== null) {
+        targetElement = languageDropdown; // Wenn sichtbar, zum Language-Dropdown scrollen
+    } else if (instantAnswerButton) {
+        targetElement = instantAnswerButton; // Andernfalls zum Button scrollen
+    } else {
+        console.error("Kein gültiges Ziel zum Scrollen gefunden.");
+        return;
+    }
+
+    // Scrollen zum Ziel-Element
+    targetElement.scrollIntoView({
+        behavior: 'smooth', // Sanftes Scrollen
+        block: 'center'     // Zentriert das Ziel-Element im sichtbaren Bereich
+    });
+
+    // Wartezeit, um sicherzustellen, dass das Scrollen abgeschlossen ist
+    setTimeout(function() {
+
+        fillModalContent(); // Die Funktion aufrufen, um die Inhalte zu füllen
+
+        // Modalen Dialog anzeigen
+        const modal = document.getElementById("confirmModal");
+        modal.style.display = "block";
+        document.body.classList.add("modal-open"); // Modalität aktivieren
+
+        // "Senden"-Button im modalen Dialog
+        document.getElementById("confirmSend").onclick = async function() {
+            modal.style.display = "none";  // Dialog ausblenden
+            document.body.classList.remove("modal-open"); // Modalität deaktivieren
+
+
+        var messageValue = document.getElementById("modalMessage").value;
+
+        var companyName = getComputedStyle(document.documentElement).getPropertyValue('--company-name').replace(/"/g, '').trim();
+        var companyEmail = getComputedStyle(document.documentElement).getPropertyValue('--company-email').replace(/"/g, '').trim();
+
+
+
+            try {
+                // POST-Anfrage an Flask senden, um die E-Mail zu versenden
+                const response = await fetch(`https://vast-citadel-93222-f91f10e46ebf.herokuapp.com/send-email`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    mode: 'cors',  // CORS-Modus aktivieren
+                    body: JSON.stringify({
+                        company: companyName,            // Firma, an die gesendet wird
+                        recipient_email: companyEmail,   // Ziel-E-Mail-Adresse
+                        name: nameValue,                 // Name des Chatbot-Benutzers
+                        user_email: emailValue,          // E-Mail des Chatbot-Benutzers
+                        message: messageValue,           // Nachricht des Chatbot-Benutzers
+                        chat_history: await getTranslatedChatHistoryForEmail() // Hol den übersetzten Chatverlauf
+
+                    })
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    // Benutzerdefinierte Bestätigung anzeigen und sichtbar machen
+                    const confirmationMessage = document.getElementById("confirm2Modal");
+                    confirmationMessage.style.display = "block";  
+                    setTimeout(function() {
+                        confirmationMessage.style.display = "none";
+                        location.reload();
+                    }, 3500);
+                } else {
+                    console.error('Fehler beim Senden der E-Mail:', result.error);
+                }
+            } catch (error) {
+                console.error('Fehler beim Senden der Anfrage:', error);
+            }
+
+            // Diese Zeile auskommentieren, da das Formular nicht mehr verwendet wird
+            // document.querySelector(".form-button").click(); // Formular absenden
+
+        };
+
+        // "Abbrechen"-Button im modalen Dialog
+        document.getElementById("cancelSend").onclick = function() {
+            modal.style.display = "none";  // Dialog ausblenden
+            document.body.classList.remove("modal-open"); // Modalität deaktivieren
+            console.log("Senden abgebrochen");
+        };
+
+    }, 500); // Wartezeit (500 ms) nach dem Scrollen
+}
+
+
+
+
+
+function fillModalContent() {
+    // CSS-Variablen aus dem root-Element auslesen
+    var companyName = getComputedStyle(document.documentElement).getPropertyValue('--company-name').replace(/"/g, '').trim();
+    var companyStreet = getComputedStyle(document.documentElement).getPropertyValue('--company-street').replace(/"/g, '').trim();
+    var companyCity = getComputedStyle(document.documentElement).getPropertyValue('--company-city').replace(/"/g, '').trim();
+    var companyEmail = getComputedStyle(document.documentElement).getPropertyValue('--company-email').replace(/"/g, '').trim();
+
+    // Debugging: Überprüfen, ob die Variablen korrekt ausgelesen werden
+    console.log("Company Name:", companyName);
+    console.log("Company Street:", companyStreet);
+    console.log("Company City:", companyCity);
+    console.log("Company Email:", companyEmail);
+
+    // Elemente aus dem DOM auswählen
+    var recipientNameElement = document.getElementById('recipientName');
+    var recipientStreetElement = document.getElementById('recipientStreet');
+    var recipientCityElement = document.getElementById('recipientCity');
+    var recipientEmailElement = document.getElementById('recipientEmail');
+
+    // Überprüfen, ob die Elemente existieren, und den Textinhalt setzen
+    if (recipientNameElement) {
+        recipientNameElement.textContent = companyName;
+    }
+
+    if (recipientStreetElement) {
+        recipientStreetElement.textContent = companyStreet;
+    }
+
+    if (recipientCityElement) {
+        recipientCityElement.textContent = companyCity;
+    }
+
+    if (recipientEmailElement) {
+        recipientEmailElement.textContent = companyEmail;
+    }
+}
+
+
+
+
+
+
+function resetPage() {
+    location.reload();
+}
+
+
+
+// Öffne das Modal für die Bestätigung zum Löschen der Chat-Historie und Reset der Nachricht
+function openDeleteConfirmation3() {
+    document.getElementById('delete-confirmation-modal3').style.display = 'flex';
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('#input-right');
+
+    if (button) {
+        console.log('Button gefunden');
+
+        // Klick-Event für den Button behandeln
+        button.addEventListener('click', function() {
+            console.log('Sende Nachricht durch Klick');
+            sendMessage();
+        });
+    } else {
+        console.log('Button nicht gefunden');
+    }
+});
+
+
+
+
+
+function forwardBotMessage() {
+    // Hol dir die letzte Nachricht vom Assistenten
+    const lastAssistantMessage = conversationHistory.reverse().find(message => message.role === 'assistant');
+
+    if (lastAssistantMessage) {
+        // Bereinige die Nachricht, indem du alle HTML-Tags entfernst, ohne etwas hinzuzufügen
+        let cleanedMessage = lastAssistantMessage.content.replace(/<[^>]*>/g, '');
+
+        // Kopiere den bereinigten Text in die Zwischenablage
+        navigator.clipboard.writeText(cleanedMessage.trim()).then(() => {
+            console.log('Letzte bereinigte Bot-Nachricht erfolgreich in die Zwischenablage kopiert:', cleanedMessage);
+        }).catch(err => {
+            console.error('Fehler beim Kopieren in die Zwischenablage:', err);
+        });
+
+        return cleanedMessage;
+    } else {
+        console.error('Keine Bot-Nachrichten gefunden');
+        return null;
+    }
+}
+
+
+
+// Setze die URL dynamisch basierend auf der CSS-Variable
+const companyMainUrl = getComputedStyle(document.documentElement)
+    .getPropertyValue('--company-main-url')
+    .trim();
+
+// Füge die URL zum Link hinzu
+document.getElementById('company-main-url').href = companyMainUrl;
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
